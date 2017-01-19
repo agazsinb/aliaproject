@@ -10,13 +10,11 @@
 
   <link href="css/animate.min.css" rel="stylesheet"> 
   <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/lightbox.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
   <link href="css/circle.css" rel="stylesheet">
   <link href="css/full-slider.css" rel="stylesheet">
-
 
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -53,8 +51,8 @@
           <ul class="nav navbar-nav navbar-right">                 
             <li ><a href="#home">Home</a></li>
             <li ><a href="#services">GALLERY</a></li> 
-            <li ><a href="#" style="color:#00aeff;">ROOMS & SUITES</a></li>                     
-            <li ><a href="#">MEETINGS</a></li>
+            <li ><a href="#" >ROOMS & SUITES</a></li>                     
+            <li ><a href="#" style="color:#00aeff;">MEETINGS</a></li>
             <li ><a href="#">DINING</a></li>
             <li><a href="#">WEDDINGS</a></li>
             <li><a href="#">BOOK NOW</a></li>       
@@ -65,11 +63,11 @@
   </header>
 
 
-  <section id="standard" class="parallax inner-shadow" style="margin-top: 50px;">
+  <section id="meetingroom" class="parallax inner-shadow" style="margin-top: 50px;">
     <div class="container">
       <div class="row" >
         <div class="col-sm-12">
-        <h1> <b>S</b>TANDARD ROOM</h1>
+        <h1> <b>M</b>EETING RESERVATION</h1>
         </div>
       </div>
     </div>
@@ -77,83 +75,77 @@
   </section><!--/#features-->
 
   <div class="container" style="padding-bottom: 10px ;margin-top:25px; margin-bottom: 25px;">
-    <div class="row">
-      <div class="col-sm-8" style="height:400px">
-          <div id="carousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                <li data-target="#carousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Carousel items -->
-            <div class="carousel-inner">
-                <div class="active item">
-                    <div class="fill" style="background-image: url(images/slider/homepage1.jpg);"></div>
+    <div class="row">          
+      <form name="main-contact-form" method="post" action="#">
+        <div class="col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">              
+          <h2 class="black">Contact Information</h2>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" name="fname" class="form-control" placeholder="First Name" required="required">
                 </div>
-                <div class="item"></div>
-                <div class="item"></div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="email" name="lname" class="form-control" placeholder="Last Name" required="required">
+                </div>
+              </div>
             </div>
-            <!-- Carousel nav -->
-            <a class="carousel-control left" href="#carousel" data-slide="prev"><b>&lsaquo;</b></a>
-            <a class="carousel-control right" href="#carousel" data-slide="next"><b>&rsaquo;</b></a>
-        </div>
-      </div>
-
-      <div class="col-sm-4">
-        <figure class="thumbnail" style="margin-bottom:10px;font-size: 20px;">
-
-          <figcaption class="caption">
-            <i class="fa fa-user biru desc"></i>4 Person
-          </figcaption>
-
-          <figcaption class="caption">
-            <i class="fa fa-bed biru desc"></i>Double Bed/Twin Bed
-          </figcaption>
-
-          <figcaption class="caption">
-            <i class="fa fa-expand biru desc"></i>4 X 7 M (28 M²)
-          </figcaption>
-        </figure>
-
-        <div class="panel-group" id="accordion">
-            <div class="panel">
-                <h4>
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><b class="biru">Room Facility</b></a>
-                </h4>
-                <div id="collapseOne" class="panel-collapse collapse in">
-                    <div class="panel-body">
-                        <p style="font-size:16px;">AC <i class="fa fa-circle-o biru"></i> TV <i class="fa fa-circle-o biru"></i> Refrigerator <i class="fa fa-circle-o biru"></i> Free Wi-Fi <i class="fa fa-circle-o biru"></i> Coffee & Tea Maker</p>
-                    </div>
-                </div>
+            <div class="form-group">
+              <input type="tel" name="pnumb" class="form-control" placeholder="Phone Number" required="required">
             </div>
-            <div class="panel">
-                <h4>
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><b class="biru">Hotel Facility</b></a>
-                </h4>
-                <div id="collapseTwo" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <p style="font-size: 16px;">24 Hours room service <i class="fa fa-circle-o biru"></i> Restaurant <i class="fa fa-circle-o biru"></i> Laundry <i class="fa fa-circle-o biru "></i> Meeting Room <i class="fa fa-circle-o biru"></i> Business Center <i class="fa fa-circle-o biru"></i> Masjid <i class="fa fa-circle-o biru"></i> Non-Smoking Room</p>
-                    </div>
-                </div>
+            <div class="form-group">
+              <input type="tel" name="meetingemail" class="form-control" placeholder="Email Address" required="required">
+            </div>
+            <div class="form-group">
+              <input type="tel" name="company" class="form-control" placeholder="Company/Assocation" required="required">
+            </div>
+            <div class=" form-group select-style">
+              <select required="required" class="form-control">
+                <option value="" selected disabled>Meeting Room Selection</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <option value="3">Three</option>
+                <option value="3">Three</option>
+
+              </select>
+            </div>                    
+            <div class="form-group">
+              <button type="submit" class="btn-submit">Send Now</button>
             </div>
         </div>
-      </div>
+        <div class="col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+           <h2 class="black">Event Information</h2>
+            <div class="form-group">
+              <input type="tel" name="ename" class="form-control" placeholder="Event Name" required="required">
+            </div>
+            <div class="form-group">
+              <input type="tel" name="epurpose" class="form-control" placeholder="Event Purpose" required="required">
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="numbonly" placeholder="Estimated Number of Attendees" type="number" min="0" step="1">
+              <span id="errmsg"></span>
+            </div>
+            <div class="form-group">
+              <input class="form-control" id="numbonly2" placeholder="Estimated Guests Room Count" type="number" min="0" step="1">
+              <span id="errmsg2"></span>
+            </div>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+
+          </div>                            
+        </div>
+      </form>    
     </div>
 
-    <div class="row" style="margin-top: 10px;">
-      <div class="col-sm-4">
-        <h1><b class="navy text-center">Rp. 500.000/Night</b></h1>
-        <b>Extra Bed - Rp. 220.000<br>
-        Extra Person - Rp. 205.000<br></b>
-        Rates are Including Tax & Service + Breakfast<br>
-        Rates are subject to change without notice<br>
-        Group rate available on request
-      </div>
-      <br>
-      <div class="col-sm-4">
-        <center><a href="#" class="bookbtn">BOOK NOW</a></center>
-      </div>
-    
+   
 
   </div>
 

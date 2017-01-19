@@ -20,7 +20,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #333;
+  color: white;
 }
 
 h2 {
@@ -32,6 +32,12 @@ h3 {
   font-size: 18px;
 }
 
+.h24{
+  font-size: 24px;
+}
+.black{color:black;}
+.navy{color:#0a1923;}
+.biru{color:#00aeff;}
 .parallax {
   background-size: cover;
   background-repeat: no-repeat;
@@ -70,7 +76,7 @@ h3 {
   border:1px solid black;
 }
 .galbtn:hover{
-  color:#f0df8c;
+  color:#00aeff;
 }
 
 .wedbtn{
@@ -119,8 +125,10 @@ h3 {
   outline:none;
   outline-offset: 0;
   text-decoration:none;  
-  color:#f0df8c;
+  color:#00aeff;
   background: transparent;
+  border-top: 4px solid #00aeff;
+  transition:0ms;
 }
 
 a {
@@ -348,6 +356,7 @@ z-index: 1030;
   font-weight: 600;
   padding-top: 30px;
   padding-bottom: 30px;
+  border-top:3px solid black;
 }
 
 .navbar-right li.active a {
@@ -699,6 +708,32 @@ z-index: 1030;
   opacity: 0.8;
 }
 
+
+/*GALLERY*/
+#gal figcaption a{border:1px solid #fff;margin-top: 1em;display: inline-block;color: #fff;padding: 0 2em;}
+#gal figcaption a:hover{text-decoration: none;padding: 0 3em;}
+
+#galleryheader {
+  background-image: url(../images/wedding-2.jpg);
+}
+
+#galleryheader i {
+  font-size: 48px;
+}
+
+#galleryheader h3 {
+  margin-top: 15px;
+  font-size: 30px;
+  margin-bottom: 7px;
+  color: #fff;
+}
+
+#galleryheader .slider-overlay {
+  opacity: 0.8;
+}
+
+
+/*ROOM & SUITES*/
 #suites {
   background-image: url(../images/wedding-2.jpg);
 }
@@ -716,6 +751,167 @@ z-index: 1030;
 
 #suites .slider-overlay {
   opacity: 0.8;
+}
+
+/*MEETING FORM*/
+#errmsg{color:red;
+        font-style: bold;}
+
+#errmsg2{color:red;
+        font-style: bold;}
+.select-style {
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    overflow: hidden;
+    color:#ccc;
+
+}
+
+.select-style select {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    overflow: hidden;
+    color:#999;
+    background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 95% 50%;
+    background-color:#fff;
+    -webkit-appearance: none;
+    outline: 0 none;
+
+}
+
+.select-style:focus {
+    outline: none;
+}
+
+.custom-select{
+  background-color: transparent;
+  height: 50px;
+  border-radius: 0px;
+  box-shadow: none;
+}
+
+/*MEETING ROOM*/
+.desc2{
+  font-size: 20px;
+  margin:0 15px 0 15px;
+  background-color:transparent;
+}
+
+
+#meetingroom {
+  background-image: url(../images/wedding-2.jpg);
+}
+
+#meetingroom i {
+  font-size: 48px;
+}
+
+#meetingroom h3 {
+  margin-top: 15px;
+  font-size: 30px;
+  margin-bottom: 7px;
+  color: #fff;
+}
+
+#meetingroom .slider-overlay {
+  opacity: 0.8;
+}
+
+/* STANDARD ROOM*/
+#standard {
+  background-image: url(../images/wedding-2.jpg);
+}
+
+#standard i {
+  font-size: 48px;
+}
+
+#standard h3 {
+  margin-top: 15px;
+  font-size: 30px;
+  margin-bottom: 7px;
+  color: #fff;
+}
+
+#standard .slider-overlay {
+  opacity: 0.8;
+}
+
+/*ROOM DETAILS CSS*/
+.carousel-control.left{padding-top: 25%;}
+.carousel-control.right{padding-top: 25%;}
+
+.desc{
+  font-size: 30px;
+  margin:0 15px 0 0;
+  background-color:transparent;
+}
+
+.bookbtn{
+  color:white;
+  width: 100%;
+  border:0;
+  padding:20px;
+  display:block;
+  font-size: 20px;
+  font-style: bold;
+  text-align: middle;
+  background-color: #00aeff;
+}
+
+.bookbtn:hover{
+  color:white;
+  background-color: black;
+  transition: 0.5s all;
+}
+
+.button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+.button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.button.accordion.active:after {
+    content: "\2212";
+}
+
+.div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.panel-group .panel{border-radius: 0;}
+.panel{
+  border-bottom: 1px solid #d6dee2; /*1.5*/
+  margin-bottom: 20px;
+  -webkit-box-shadow:0;
+  box-shadow: 0 0 0;
+  border-left: 0;
+  border-right:0;
+  background-color: transparent;
 }
 /*************************
 *****Pricing Table CSS****
@@ -983,7 +1179,6 @@ z-index: 1030;
 
 .form-control {
   background-color: transparent;
-  border-color: rgba(255,255,255,.1);
   height: 50px;
   border-radius: 0;
   box-shadow: none;
@@ -1029,6 +1224,7 @@ ul.address {
 
 #footer {
   color:#fff;
+  background-color: black;
 }
 
 .footer-top {
@@ -1102,7 +1298,7 @@ ul.address {
   font-size: 17px;
   font-style: bold;
   text-align: middle;
-  background-color: #3aa0e0;
+  background-color: #00aeff;
 }
 
 .roombtn:hover{
@@ -1132,7 +1328,7 @@ ul.address {
 .thumbnail .caption {
     padding          : 15px 0;
     color            : #313131;
-    border-bottom: 2px solid #d6dee2 
+    border-bottom: 1px solid #d6dee2  /*1.5*/
     }
 .thumbnail h3 small {
     font-size      : 11px;
