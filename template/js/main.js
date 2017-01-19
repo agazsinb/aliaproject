@@ -153,7 +153,8 @@ jQuery(function($) {
 	   });
 	});
 
-	$('#datetimepicker1').data("DateTimePicker").FUNCTION()
+	//DATE TIME PICKER
+
 	//Google Map
 	var latitude = $('#google-map').data('latitude')
 	var longitude = $('#google-map').data('longitude')
