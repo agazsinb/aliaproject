@@ -14,10 +14,10 @@
 
   <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
-
   <!--DATE TIME PICKER-->
   <link href="css/datepicker.css" rel="stylesheet">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
@@ -74,44 +74,51 @@
 
   </section><!--/#features-->
 
+
+
   <div class="container" style="padding-bottom: 10px ;margin-top:25px; margin-bottom: 25px;">
     <div class="row">          
       <form name="meeting-form" method="post" action="#">
-        <div class="col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">              
-          <h2 class="black">Contact Information</h2>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input type="text" name="fname" class="form-control" placeholder="First Name" required="required">
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <input type="email" name="lname" class="form-control" placeholder="Last Name" required="required">
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="tel" name="pnumb" class="form-control" placeholder="Phone Number" required="required">
-            </div>
-            <div class="form-group">
-              <input type="tel" name="meetingemail" class="form-control" placeholder="Email Address" required="required">
-            </div>
-            <div class="form-group">
-              <input type="tel" name="company" class="form-control" placeholder="Company/Assocation" required="required">
-            </div>
-            <div class=" form-group select-style">
-              <select required="required" class="form-control">
-                <option value="" selected disabled>Meeting Room Selection</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-                <option value="3">Three</option>
-                <option value="3">Three</option>
 
-              </select>
-            </div>                    
-        </div>
+        <!--NUMBER ONLY VALIDATION-->
+        <script type="text/javascript">
+            $(function(){
+
+              $('.number-only').keypress(function(e) {
+              if(isNaN(this.value+""+String.fromCharCode(e.charCode))){
+                    $("#errmsg").html("Digits Only").show().fadeOut("slow");
+                    return false;}
+
+              });
+
+            });
+        </script>
+
+        <script type="text/javascript">
+            $(function(){
+
+              $('.number-only2').keypress(function(e) {
+              if(isNaN(this.value+""+String.fromCharCode(e.charCode))){
+                    $("#errmsg2").html("Digits Only").show().fadeOut("slow");
+                    return false;}
+
+              });
+
+            });
+        </script>
+
+        <script type="text/javascript">
+            $(function(){
+
+              $('.number-only3').keypress(function(e) {
+              if(isNaN(this.value+""+String.fromCharCode(e.charCode))){
+                    $("#errmsg3").html("Digits Only").show().fadeOut("slow");
+                    return false;}
+
+              });
+
+            });
+        </script>
         <div class="col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
            <h2 class="black">Event Information</h2>
             <div class="form-group">
@@ -120,20 +127,31 @@
             <div class="form-group">
               <input type="tel" name="epurpose" class="form-control" placeholder="Event Purpose" required="required">
             </div>
+            <div class=" form-group select-style">
+              <select required="required" class="form-control">
+                <option value="" selected disabled>Meeting Room Selection</option>
+                <option value="1">Puring</option>
+                <option value="2">Taram Besi</option>
+                <option value="3">Sepatu Dea</option>
+                <option value="3">Adelia</option>
+                <option value="3">Ketapang Kencana</option>
+
+              </select>
+            </div>     
             <div class="form-group">
-              <input class="form-control" id="numbonly" placeholder="Estimated Number of Attendees" type="number" min="0">
-              <span id="errmsg"></span>
+              <input class="form-control number-only2" placeholder="Estimated Number of Attendees" type="number" min="0">
+              <span id="errmsg2"></span>
             </div>
             <div class="form-group">
-              <input class="form-control" id="numbonly2" placeholder="Estimated Guests Room Count" type="number" min="0">
-              <span id="errmsg2"></span>
+              <input class="form-control number-only3" placeholder="Estimated Guests Room Count" type="number" min="0">
+              <span id="errmsg3"></span>  
             </div>
 
             <div class="form-group">
               <div class="input-group">
-                  <input  class="form-control" type="text" placeholder="Event Start Dates"  id="datetimegw">
+                  <input  class="form-control" placeholder="Event Start Dates"  id="datetimegw">
                   <span class="input-group-addon">
-                      <span class="glyphicon glyphicon-calendar"></span>
+                      <span class="glyphicon-calendar glyphicon "></span>
                   </span>
               </div>
                 <script src="js/jquery.js"></script>
@@ -168,7 +186,7 @@
             </div>
 
             <div class="form-group input-group">
-                <input  class="form-control" type="text" placeholder="Event Start Dates"  id="datetimegw2">
+                <input  class="form-control" type="text" placeholder="Event End Dates"  id="datetimegw2">
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </span>
@@ -202,16 +220,42 @@
                 }).data('datepicker');
 
                 </script>
-        </div>      
+        </div>    
+        <div class="col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">              
+          <h2 class="black">Contact Information</h2>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" name="fname" class="form-control" placeholder="First Name" required="required">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="email" name="lname" class="form-control" placeholder="Last Name" required="required">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="tel" name="pnumb" class="form-control number-only" placeholder="Phone Number" required="required"><span id="errmsg"></span>
+            </div>
+            <div class="form-group">
+              <input type="tel" name="meetingemail" class="form-control" placeholder="Email Address" required="required">
+            </div>
+            <div class="form-group">
+              <input type="tel" name="company" class="form-control" placeholder="Company/Assocation" required="required">
+            </div>               
+        </div>  
       </form>    
       </div>                            
 
     <div class="row">
       <div class="col-sm-4 col-sm-offset-4">
-        <button type="submit" class="btn-submit">Send Reservation</button>
+        <button type="submit" class="bookbtn2">Send Reservation</button>
       </div>
+
     </div>
   </div>
+
 
 
   <footer id="footer">
@@ -228,6 +272,7 @@
       </div>
     </div>
   </footer>
+
 
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/jquery.inview.min.js"></script>
