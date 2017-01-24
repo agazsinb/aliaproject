@@ -36,6 +36,8 @@ h3 {
   font-size: 24px;
 }
 
+.putih{color:white;}
+.gold{color:#dbb13b;}
 .navy2{color:#313131;}
 .black{color:black;}
 .navy{color:#0a1923;}
@@ -71,6 +73,7 @@ h3 {
   color: #fff;
 }
 
+
 .galbtn{
   font-size:35px;
   color:white;
@@ -96,20 +99,41 @@ h3 {
   transition: 0.5s;
 }
 
-.metbtn{
-  border:5px solid black;
-  color:black;
-  padding:30px 40px 30px 40px;
-  font-size: 35px;
-  text-align: middle;
-
+.metbtn {
+  color:#313131;
+  font-family: inherit;
+  font-size: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.metbtn:hover{
-  border:10px solid black;
-  font-size: 40px;
-  color:black;
+.metbtn:hover {
+  color:white;
+  border-color:white;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
+
+.btn-1 {
+  border: 3px solid #313131;
+  color: #313131;
+}
+
+
+
+
 
 
 .btn {
@@ -210,6 +234,37 @@ section {
 /*************************
 ********Home CSS**********
 **************************/
+
+.fontgw{
+    font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  line-height: 24px;
+
+}
+
+hr.style17 {
+  margin-top:40px;
+  border-top: 1px solid #8c8b8b;
+  text-align: center;
+  width:30%;
+}
+hr.style17:after {
+  content: '§';
+  display: inline-block;
+  position: relative;
+  top: -14px;
+  padding: 0 10px;
+  background: #fffeed;
+  color: #8c8b8b;
+  font-size: 18px;
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+
+
+
 #home-slider {
   overflow: hidden;
   position: relative;
@@ -310,19 +365,22 @@ body,
 }
 
 .item:nth-child(1) {
-    background: #74C390;
+    background-image:url(../images/slider/homepage1.jpg);
+    background-size: 1429px 680px;
+
 }
 
 .item:nth-child(2) {
-    background: #51BCE8;
+    background-image:url(../images/slider/homepage2.jpg);
+    background-size: 1429px 680px;
 }
 
 .item:nth-child(3) {
-    background: #E46653;
+    background-image:url(../images/slider/homepage3.jpg);
+    background-size: 1429px 680px;
 }}
 
 .affix{top:0;
-
 width: 100%;
 z-index: 1030;
 }
@@ -336,7 +394,7 @@ z-index: 1030;
   right:30px
 }
 
-#home-slider .fa-angle-down {
+#home .fa-angle-down {
   position: absolute;
   left: 50%;
   bottom: 50px;
@@ -415,7 +473,7 @@ z-index: 1030;
 ********About CSS*******
 **************************/
 #about-us {
-  background-image: url(../images/about-bg.jpg);
+  background-image: url(../images/depan.jpg);
   padding: 60px 0;
 }
 
@@ -716,7 +774,7 @@ z-index: 1030;
 #gal figcaption a:hover{text-decoration: none;padding: 0 3em;}
 
 #galleryheader {
-  background-image: url(../images/wedding-2.jpg);
+  background-image: url(../images/galheader.jpg);
 }
 
 #galleryheader i {
@@ -737,7 +795,7 @@ z-index: 1030;
 
 /*ROOM & SUITES*/
 #suites {
-  background-image: url(../images/wedding-2.jpg);
+  background-image: url(../images/room/roomheader2.jpg);
 }
 
 #suites i {
@@ -801,7 +859,7 @@ z-index: 1030;
 .conbtn{
   border:0;
   border-radius: 0;
-  background-color: #00aeff;
+  background-color: #304b78;
   padding:10px 20px 10px 20px;
   font-size: 16px;
   color:white;
@@ -888,11 +946,11 @@ span.round-tab i{
 }
 .wizard li.active span.round-tab {
     background: #fff;
-    border: 2px solid #00aeff;
+    border: 2px solid #304b78;  /*tandain*/
     
 }
 .wizard li.active span.round-tab i{
-    color: #00aeff;
+    color: #304b78;
 }
 
 span.round-tab:hover {
@@ -912,7 +970,7 @@ span.round-tab:hover {
     margin: 0 auto;
     bottom: 0px;
     border: 5px solid transparent;
-    border-bottom-color: #00aeff;
+    border-bottom-color: #304b78;
     transition: 0.1s ease-in-out;
 }
 
@@ -924,7 +982,7 @@ span.round-tab:hover {
     margin: 0 auto;
     bottom: 0px;
     border: 10px solid transparent;
-    border-bottom-color: #00aeff;
+    border-bottom-color: #304b78;
 }
 
 .wizard .nav-tabs > li a {
@@ -976,7 +1034,7 @@ span.round-tab:hover {
 }
 
 #roomreservation {
-  background-image: url(../images/wedding-2.jpg);
+  background-image: url(../images/room/roomheader2.jpg);
 }
 
 #roomreservation i {
@@ -1003,7 +1061,7 @@ span.round-tab:hover {
 
 
 #meetingroom {
-  background-image: url(../images/wedding-2.jpg);
+  background-image: url(../images/meeting/meetingheader.jpg);
 }
 
 #meetingroom i {
@@ -1062,7 +1120,7 @@ span.round-tab:hover {
   font-size: 20px;
   font-style: bold;
   text-align: middle;
-  background-color: #00aeff;
+  background-color: #304b78;
 }
 
 .bookbtn2:hover{
@@ -1080,7 +1138,7 @@ span.round-tab:hover {
   font-size: 20px;
   font-style: bold;
   text-align: middle;
-  background-color: #00aeff;
+  background-color: #304b78;
 }
 
 .bookbtn:hover{
@@ -1141,7 +1199,7 @@ span.round-tab:hover {
 /*FEEDBACK*/
 
 #feedbackhead {
-  background-image: url(../images/wedding-2.jpg);
+  background-image: url(../images/feedbackhead.png);
   background-color: rgba(255,255,255,1);
 }
 
@@ -1215,7 +1273,7 @@ span.round-tab:hover {
 ********Twitter CSS*******
 **************************/
 #twitter {
-  background-image: url(../images/meeting-room.jpg);
+  background-image: url(../images/meeting-room2.jpg);
 }
 
 #twitter > div {
@@ -1506,6 +1564,7 @@ ul.address {
   background-color: rgba(0,0,0,.2);
   border-radius: 4px;
   line-height: 33px;
+  color:#dbb13b;
 }
 
 #footer .social-icons ul li a:hover {

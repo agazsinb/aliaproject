@@ -16,6 +16,13 @@
   <link href="css/responsive.css" rel="stylesheet">
   <link href="css/circle.css" rel="stylesheet">
   <link href="css/full-slider.css" rel="stylesheet">
+<style>
+.affix{top:0;
+width: 100%;
+z-index: 1030;
+}
+
+</style>
 
 
   <!--[if lt IE 9]>
@@ -34,21 +41,29 @@
   <!--/.preloader-->
     <!-- Full Page Image Background Carousel Header -->
 <header id="home">
-    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
-        </ol>
+    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" style="transition-duration: 4s; ">
+
         <!-- Carousel items -->
         <div class="carousel-inner">
             <div class="active item">
-                <div class="fill" style="background-image: url(images/slider/homepage1.jpg);"></div>
+              <div class="col-sm-12 text-center" style="top:25%;">
+                <img src="images/official-logo2.png" style="text-align: center; background:transparent;" height="350" width="350" alt="logo">
+              </div>
             </div>
-            <div class="item"></div>
-            <div class="item"></div>
+            <div class="item">
+              <div class="col-sm-12 text-center" style="top:25%;">
+                <img src="images/official-logo3.png" style="text-align: center; background:transparent;" height="350" width="350" alt="logo">
+              </div>
+            </div>
+            <div class="item">
+              <div class="col-sm-12 text-center" style="top:25%;">
+                <img src="images/official-logo2.png" style="text-align: center; background:transparent;" height="350" width="350" alt="logo">
+              </div>
+            </div>
         </div>
         <!-- Carousel nav -->
+        <a id="tohash" href="#services"><i class="fa fa-angle-down"></i></a>
+
     </div>
 
 
@@ -70,15 +85,18 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li><a href="#home">Home</a></li>
-            <li ><a href="#services">GALLERY</a></li> 
-            <li ><a href="#">ROOMS & SUITES</a></li>                     
-            <li ><a href="#">MEETINGS</a></li>
-            <li ><a href="#">DINING</a></li>
-            <li><a href="#">WEDDINGS</a></li>
-            <li><a href="#">BOOK NOW</a></li>       
+            <li><a href="index2.html" style="color:#dbb13b;">Home</a></li>
+            <li ><a href="gallery.html">GALLERY</a></li> 
+            <li ><a href="suites.html">ROOMS & SUITES</a></li>                     
+            <li ><a href="meetings.html">MEETINGS</a></li>
+            <li ><a href="feedback.html">FEEDBACK</a></li>
+            <li><a href="aliawedding.com">WEDDINGS</a></li>
+            <li><a href="roomreservation.html">BOOK NOW</a></li>
+            <li><a href="roomreservation.html"><img class="img-responsive" src="images/indonesia.png" height="25" width="25" alt="logo"></a></li>
           </ul>
+
         </div>
+
       </div>
       </div><!--/#main-nav-->
   </header>
@@ -91,52 +109,19 @@
       <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
         <div class="row">
           <div class="col-sm-12">
-            <div class=text-center>
-              <h2>COMFORTABLE STAY IN THE CENTER OF JAKARTA</h2>
-              <span class="bordered-icon"><i class="fa fa-circle-thin"></i></span>
+            <div class="lead text-center">
+              <div class="navy2 fontgw">STAY COMFORTABLE IN CENTER OF JAKARTA</div>
+
             </div>
+            <hr class="style17">
               <br>
-              <p style="font-size:16px;padding-top:5px;">3 star comfortable hotel  in jakarta at the heart of city – located in the central city of Jakarta.  Gren Alia Hotel enjoys convenient access to Taman Ismail Marzuki (the Jakarta Cultural Centre) and planetarium  buildings, government offices, embassies, cultural attractions and shopping centres.  Our hotel is not only designed to convey timeless luxury but also to provide a convenience in the city for both business and leisure travellers.
+              <p class="lead" style="font-size:19;padding-top:5px;">3 star comfortable hotel  in jakarta at the heart of city – located in the central city of Jakarta.  Gren Alia Hotel enjoys convenient access to Taman Ismail Marzuki (the Jakarta Cultural Centre) and planetarium  buildings, government offices, embassies, cultural attractions and shopping centres.  Our hotel is not only designed to convey timeless luxury but also to provide a convenience in the city for both business and leisure travellers.
 
               neeeddd moree text 3 star comfortable hotel  in jakarta at the heart of city – located in the central city of Jakarta.  Gren Alia Hotel enjoys convenient access to Taman Ismail Marzuki (the Jakarta Cultural Centre) and planetarium  buildings, government offices, embassies, cultural attractions and shopping centres.  Our hotel is not only designed to convey timeless luxury but also to provide a convenience in the city for both business and leisure travellers.
               </p>
               <br>
 
-              <div class=text-center>
-                <span class="bordered-icon"><i class="fa fa-circle-thin"></i></span>
-              </div> 
             </div>
-
-            <br>
-        </div>
-
-        <div class="row">
-          <div class="col-sm-2">
-          </div>
-
-          <div class="col-sm-4 text-center">
-            <center>
-            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-              <div class="c100 p85 big orange">
-                    <span>85</span>
-                    <div class="slice">
-                    <div class="bar"></div>
-                    <div class="fill"></div>
-                    </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-4 text-center">
-            <h1>85/100</h1>
-            <h3>Rates according to 219 guests</h3>
-
-            <p class="lead">Customer satisfaction rating is available by:</p>              
-            <center><img class="img-responsive" src="images/Traveloka_2014.png" height="50" width="100" alt=""></center>
-          </div>
-
-          <div class="col-sm-2">
-          </div>
 
         </div>
 
@@ -146,30 +131,30 @@
   </section><!--/#services-->
 
 
-  <section id="twitter" class="parallax inner-shadow">
-    <div class="container" style="background:rgba(255,255,255,0.5); padding-top: 10px;">
+  <section id="twitter" class="parallax">
+    <div class="container">
       <div class="row">
-        <div class="col-sm-6">
-          <p class="lead" style="color:black;">Located in the Central on Jakarta, Gren Alia Cikini Hotel is a perfect place to venue a meeting. With excellent meeting rooms, enjoyable menus and dedicated services, we guarantee a great meeting for everyone. What you’ll receive: fine services and amenities, excellent location in Central of Jakarta, variety of dining, coffee break and beverages selections, capacity up to 300 pax, high speed internet access.</p>
+        <div class="col-sm-6 col-sm-offset-6">
+          <p class="lead" style="color:black;">Located in the Central on Jakarta, Gren Alia Prapatan Hotel is a perfect place to venue a meeting. With excellent meeting rooms, enjoyable menus and dedicated services, we guarantee a great meeting for everyone. What you’ll receive: fine services and amenities, excellent location in Central of Jakarta, variety of dining, coffee break and beverages selections, capacity up to 300 pax, high speed internet access.</p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-sm-offset-6">
           <br>
           <br>
           <br>
           <br>
           <br>
-          <center><a href="#" class="metbtn">RESERVATION</a></center>
+          <center><a href="meetingreservation.html" class="metbtn btn-1 btn-1e">RESERVATION</a></center>
         </div>
       </div>
     </div>
   </section><!--/#twitter-->
 
 
+
   <div class="container" style="padding-bottom: 10px; ">
     <div class="row" style="margin-top: 25px; margin-bottom:25px;">
       <div class="text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-        <h2>ROOM & SUITES</h2>
-        <p>For more information and pictures about the room & suites please click on details...</p>
+        <p>For more information and pictures about the room & suites please hover images</p>
       </div>
     </div>
 
@@ -180,20 +165,20 @@
             <div class="view view-first">
               <img src="images/room/2.jpg" />
                 <div class="mask">
-                    <h2>ROOM1</h2>
+                    <h2>STANDARD</h2>
                     <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
                     <a href="#" class="info">BOOK NOW</a>
                 </div>
             </div>  
               <figcaption class="caption">
-                <h3><b>STANDARD</b><br>
-                  <large class="biru">Rp. 500.000</large>
+                <h3 class="biru"><b>STANDARD</b><br>
+                  <large class="navy2">Rp. 500.000</large>
                 </h3>
               </figcaption>
               <figcaption class="caption">
-                <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><i style="margin:0 12px 0 0">testtest</i>
-                <i class="fa fa-bed biru" style=" background-color:transparent; font-size:20px;"></i> <i style="margin:0 12px 0 0">testtest</i>
-                <i class="fa fa-user biru" style=" background-color:transparent; font-size:20px;"></i> testtest
+                <i class="fa fa-user biru" style=" background-color:transparent; font-size:20px; "></i><b style="margin:0 20px 0 3px; font-size: 20px;">2</b> 
+                <i class="fa fa-bed biru" style=" background-color:transparent; font-size:20px;"></i> <b style="margin:0 20px 0 3px; font-size: 16px;">Single/Double</b>
+                <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><b style="margin:0 20px 0 3px; font-size: 16px;">4 X 7 M²</b>
               </figcaption>
               <figcaption style="margin-top:20px;">
                 <center><a href="#" class="roombtn">DETAILS</a></center>
@@ -207,140 +192,141 @@
             <div class="view view-first">
               <img src="images/room/2.jpg" />
                 <div class="mask">
-                    <h2>ROOM1</h2>
+                    <h2>SUPERIOR</h2>
                     <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
                     <a href="#" class="info">BOOK NOW</a>
                 </div>
             </div>  
               <figcaption class="caption">
-                <h3><b>STANDARD</b><br>
-                  <large class="biru">Rp. 500.000</large>
+                <h3 class="biru"><b>SUPERIOR</b><br>
+                  <large class="navy2">Rp. 540.000</large>
                 </h3>
               </figcaption>
               <figcaption class="caption">
-                <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><i style="margin:0 12px 0 0">testtest</i>
-                <i class="fa fa-bed biru" style=" background-color:transparent; font-size:20px;"></i> <i style="margin:0 12px 0 0">testtest</i>
-                <i class="fa fa-user biru" style=" background-color:transparent; font-size:20px;"></i> testtest
+                <i class="fa fa-user biru" style=" background-color:transparent; font-size:20px; "></i><b style="margin:0 20px 0 3px; font-size: 20px;">2</b> 
+                <i class="fa fa-bed biru" style=" background-color:transparent; font-size:20px;"></i> <b style="margin:0 20px 0 3px; font-size: 16px;">Single/Double</b>
+                <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><b style="margin:0 20px 0 3px; font-size: 16px;">4 X 7 M²</b>
               </figcaption>
               <figcaption style="margin-top:20px;">
                 <center><a href="#" class="roombtn">DETAILS</a></center>
               </figcaption>
 
           </figure>
-      </div> 
+      </div>  
 
       <div class="col-sm-4">
           <figure class="thumbnail">
             <div class="view view-first">
               <img src="images/room/2.jpg" />
                 <div class="mask">
-                    <h2>ROOM1</h2>
+                    <h2>DELUXE</h2>
                     <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
                     <a href="#" class="info">BOOK NOW</a>
                 </div>
             </div>  
               <figcaption class="caption">
-                <h3><b>STANDARD</b><br>
-                  <large class="biru">Rp. 500.000</large>
+                <h3 class="biru"><b>DELUXE</b><br>
+                  <large class="navy">Rp. 590.000</large>
                 </h3>
               </figcaption>
               <figcaption class="caption">
-                <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><i style="margin:0 12px 0 0">testtest</i>
-                <i class="fa fa-bed biru" style=" background-color:transparent; font-size:20px;"></i> <i style="margin:0 12px 0 0">testtest</i>
-                <i class="fa fa-user biru" style=" background-color:transparent; font-size:20px;"></i> testtest
+                <i class="fa fa-user biru" style=" background-color:transparent; font-size:20px; "></i><b style="margin:0 20px 0 3px; font-size: 20px;">2</b> 
+                <i class="fa fa-bed biru" style=" background-color:transparent; font-size:20px;"></i> <b style="margin:0 20px 0 3px; font-size: 16px;">Single/Double</b>
+                <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><b style="margin:0 20px 0 3px; font-size: 16px;">4 X 7 M²</b>
               </figcaption>
               <figcaption style="margin-top:20px;">
                 <center><a href="#" class="roombtn">DETAILS</a></center>
               </figcaption>
 
           </figure>
-      </div> 
+      </div>  
+
     </div>
 
     <br>
 
     <div class="row">
-
       <div class="col-sm-4">
           <figure class="thumbnail">
             <div class="view view-first">
               <img src="images/room/2.jpg" />
                 <div class="mask">
-                    <h2>ROOM1</h2>
+                    <h2>SUITE</h2>
                     <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
                     <a href="#" class="info">BOOK NOW</a>
                 </div>
             </div>  
               <figcaption class="caption">
-                <h3><b>STANDARD</b><br>
-                  <large class="biru">Rp. 500.000</large>
+                <h3 class="biru"><b>SUITE</b><br>
+                  <large class="navy">Rp. 730.000</large>
                 </h3>
               </figcaption>
               <figcaption class="caption">
-                <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><i style="margin:0 12px 0 0">testtest</i>
-                <i class="fa fa-bed biru" style=" background-color:transparent; font-size:20px;"></i> <i style="margin:0 12px 0 0">testtest</i>
-                <i class="fa fa-user biru" style=" background-color:transparent; font-size:20px;"></i> testtest
+                <i class="fa fa-user biru" style=" background-color:transparent; font-size:20px; "></i><b style="margin:0 20px 0 3px; font-size: 20px;">2</b> 
+                <i class="fa fa-bed biru" style=" background-color:transparent; font-size:20px;"></i> <b style="margin:0 20px 0 3px; font-size: 16px;">Single/Double</b>
+                <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><b style="margin:0 20px 0 3px; font-size: 16px;">9 X 7 M²</b>
               </figcaption>
               <figcaption style="margin-top:20px;">
                 <center><a href="#" class="roombtn">DETAILS</a></center>
               </figcaption>
 
           </figure>
-      </div> 
+      </div>  
 
       <div class="col-sm-4">
           <figure class="thumbnail">
             <div class="view view-first">
               <img src="images/room/2.jpg" />
                 <div class="mask">
-                    <h2>ROOM1</h2>
+                    <h2>FAMILY</h2>
                     <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
                     <a href="#" class="info">BOOK NOW</a>
                 </div>
             </div>  
               <figcaption class="caption">
-                <h3><b>STANDARD</b><br>
-                  <large class="biru">Rp. 500.000</large>
+                <h3 class="biru"><b>FAMILY</b><br>
+                  <large class="navy">Rp. 850.000</large>
                 </h3>
               </figcaption>
               <figcaption class="caption">
-                <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><i style="margin:0 12px 0 0">testtest</i>
-                <i class="fa fa-bed biru" style=" background-color:transparent; font-size:20px;"></i> <i style="margin:0 12px 0 0">testtest</i>
-                <i class="fa fa-user biru" style=" background-color:transparent; font-size:20px;"></i> testtest
+                <i class="fa fa-user biru" style=" background-color:transparent; font-size:20px; "></i><b style="margin:0 20px 0 3px; font-size: 20px;">4</b> 
+                <i class="fa fa-bed biru" style=" background-color:transparent; font-size:20px;"></i> <b style="margin:0 20px 0 3px; font-size: 16px;">2 Double</b>
+                <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><b style="margin:0 20px 0 3px; font-size: 16px;">8.1 X 7 M²</b>
               </figcaption>
               <figcaption style="margin-top:20px;">
                 <center><a href="#" class="roombtn">DETAILS</a></center>
               </figcaption>
 
           </figure>
-      </div> 
+      </div>  
 
       <div class="col-sm-4">
           <figure class="thumbnail">
             <div class="view view-first">
               <img src="images/room/2.jpg" />
                 <div class="mask">
-                    <h2>ROOM1</h2>
+                    <h2>EXECUTIVE FAMILY</h2>
                     <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
                     <a href="#" class="info">BOOK NOW</a>
                 </div>
             </div>  
               <figcaption class="caption">
-                <h3><b>STANDARD</b><br>
-                  <large class="biru">Rp. 500.000</large>
+                <h3 class="biru"><b>EXECUTIVE FAMILY</b><br>
+                  <large class="navy">Rp. 930.000</large>
                 </h3>
               </figcaption>
               <figcaption class="caption">
-                <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><i style="margin:0 12px 0 0">testtest</i>
-                <i class="fa fa-bed biru" style=" background-color:transparent; font-size:20px;"></i> <i style="margin:0 12px 0 0">testtest</i>
-                <i class="fa fa-user biru" style=" background-color:transparent; font-size:20px;"></i> testtest
+                <i class="fa fa-user biru" style=" background-color:transparent; font-size:20px; "></i><b style="margin:0 20px 0 3px; font-size: 20px;">4</b> 
+                <i class="fa fa-bed biru" style=" background-color:transparent; font-size:20px;"></i> <b style="margin:0 20px 0 3px; font-size: 16px;">2 Double</b>
+                <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><b style="margin:0 20px 0 3px; font-size: 16px;">8.2 X 7 M²</b>
               </figcaption>
               <figcaption style="margin-top:20px;">
                 <center><a href="#" class="roombtn">DETAILS</a></center>
               </figcaption>
 
           </figure>
-      </div> 
+      </div>  
+
     </div>
   </div>
 
@@ -470,19 +456,19 @@
 
   <section id="about-us" class="parallax">
     <div class="container">
-      <div class="row">
+      <div class="row lead">
 
         <div class="text-center col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
               <i class="fa fa-map-marker" style=" background-color:transparent; font-size: 8em;"></i>
-              <h3> Jl. Cikini Raya No.46, Jakarta 10330 - Indonesia</h3>
+              <h3> Jl. Prapatan No. 28 Kwitang Jakarta Pusat 10410 Indonesia</h3>
             </div>
         <div class="text-center col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
-              <i class="fa fa-envelope" style=" background-color:transparent; font-size: 8em;"></i>
-              <h3> dummydata@grenalia.com</h3>
+              <i class="fa fa-envelope " style=" background-color:transparent; font-size: 8em;"></i>
+              <h3> reservasi@grenaliaprapatanhotel.com</h3>
             </div>
         <div class="text-center col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
               <i class="fa fa-phone" style=" background-color:transparent; font-size: 8em;"></i>
-              <h3>+62 21 230 4000</h3>
+              <h3>+62 21 34834444</h3>
             </div>
           </div>
         </div>
@@ -498,15 +484,27 @@
 
   <footer id="footer">
     <div class="footer-bottom">
-      <div class="container">
+      <div class="container putih" >
         <div class="row">
-          <div class="col-sm-6">
-            <p><u>English</u> | Bahasa</p>
-          </div>
-          <div class="col-sm-6">
-            <p class="pull-right">Designed by <a href="http://www.themeum.com/">Alia Hotel Group</a></p>
+          <div class="col-sm-6 col-sm-offset-3">
+            <div class="social-icons">
+              <ul>
+                <li><a class="envelope" href="#"><i class=" fa fa-envelope"></i></a></li>
+                <li><a class="twitter" href="#"><i class=" fa fa-twitter"></i></a></li> 
+                <li><a class="dribbble" href="#"><i class=" fa fa-dribbble"></i></a></li>
+                <li><a class="facebook" href="#"><i class=" fa fa-facebook"></i></a></li>
+                <li><a class="linkedin" href="#"><i class=" fa fa-linkedin"></i></a></li>
+                <li><a class="tumblr" href="#"><i class=" fa fa-tumblr-square"></i></a></li>
+              </ul>
+            </div>
           </div>
         </div>
+
+        <div class="row text-center">
+            <p><br><br>Copyright 2017, Alia Hotels Group. All Rights Reserved<br>
+            Designed by Agazsi Bahasoean</p>
+        </div>
+
       </div>
     </div>
   </footer>
