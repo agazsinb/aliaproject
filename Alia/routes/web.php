@@ -10,9 +10,14 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+//View::addExtension('html', 'php');
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('index', function (){
+	return view('template/index');
 });
 
 Route::get('mail', function (){
