@@ -1079,6 +1079,107 @@ span.round-tab:hover {
   opacity: 0.8;
 }
 
+/*SUPERIOR ROOM*/
+#superior {
+  background-image: url(../images/room/superior/superhead.jpg);
+}
+
+#superior i {
+  font-size: 48px;
+}
+
+#superior h3 {
+  margin-top: 15px;
+  font-size: 30px;
+  margin-bottom: 7px;
+  color: #fff;
+}
+
+#superior .slider-overlay {
+  opacity: 0.8;
+}
+
+
+/*EX FAMILY ROOM*/
+#xfamhead {
+  background-image: url(../images/room/deluxe/deluxehead.jpg);
+}
+
+#xfamhead i {
+  font-size: 48px;
+}
+
+#xfamhead h3 {
+  margin-top: 15px;
+  font-size: 30px;
+  margin-bottom: 7px;
+  color: #fff;
+}
+
+#xfamhead .slider-overlay {
+  opacity: 0.8;
+}
+
+/*FAMILY ROOM*/
+#famhead {
+  background-image: url(../images/room/family/familyhead.jpg);
+}
+
+#famhead i {
+  font-size: 48px;
+}
+
+#famhead h3 {
+  margin-top: 15px;
+  font-size: 30px;
+  margin-bottom: 7px;
+  color: #fff;
+}
+
+#famhead .slider-overlay {
+  opacity: 0.8;
+}
+
+/*SUITE ROOM*/
+#suitehead {
+  background-image: url(../images/room/suite/suitehead.jpg);
+}
+
+#suitehead i {
+  font-size: 48px;
+}
+
+#suitehead h3 {
+  margin-top: 15px;
+  font-size: 30px;
+  margin-bottom: 7px;
+  color: #fff;
+}
+
+#suitehead .slider-overlay {
+  opacity: 0.8;
+}
+
+/*DELUXE*/
+#deluxehead {
+  background-image: url(../images/room/deluxe/deluxehead.jpg);
+}
+
+#deluxehead i {
+  font-size: 48px;
+}
+
+#deluxehead h3 {
+  margin-top: 15px;
+  font-size: 30px;
+  margin-bottom: 7px;
+  color: #fff;
+}
+
+#deluxehead .slider-overlay {
+  opacity: 0.8;
+}
+
 /* STANDARD ROOM*/
 #standard {
   background-image: url(../images/wedding-2.jpg);
