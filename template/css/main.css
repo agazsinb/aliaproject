@@ -38,9 +38,11 @@ h3 {
 
 .putih{color:white;}
 .gold{color:#dbb13b;}
-.navy2{color:#313131;}
+.navy2{color:#313131;} 
 .black{color:black;}
 .navy{color:#0a1923;}
+
+.navy3{color:#0a0e29;}
 .biru{color:#304b78;}
 .parallax {
   background-size: cover;
@@ -365,13 +367,16 @@ body,
 }
 
 .item:nth-child(1) {
-    background-image:url(../images/slider/homepage1.jpg);
-    background-size: 1429px 680px;
+    background-image:url(../images/slider/homelobby.jpg);
+    width:auto;
+    height:680px;
+    background-repeat: no-repeat;
+
 
 }
 
 .item:nth-child(2) {
-    background-image:url(../images/slider/homepage2.jpg);
+    background-image:url(../images/slider/deluxe3.jpg);
     background-size: 1429px 680px;
 }
 
@@ -398,7 +403,7 @@ z-index: 1030;
   position: absolute;
   left: 50%;
   bottom: 50px;
-  color: #fff;
+  color: white;
   display: inline-block;
   width: 24px;
   margin-left: -12px;
@@ -473,7 +478,7 @@ z-index: 1030;
 ********About CSS*******
 **************************/
 #about-us {
-  background-image: url(../images/depan.jpg);
+  background-image: url(../images/package-back-2.jpg);
   padding: 60px 0;
 }
 
@@ -742,6 +747,16 @@ z-index: 1030;
   margin-bottom: 15px;
   color: #999;
 }
+
+.special{
+  background-image:url(../images/package-back-2.jpg);
+}
+
+
+.backgroundwed{
+  background-image:url(../images/package-back-1.jpg);
+}
+
 
 
 /*************************
@@ -1180,9 +1195,9 @@ span.round-tab:hover {
   opacity: 0.8;
 }
 
-/* STANDARD ROOM*/
+/* CD ROOM*/
 #standard {
-  background-image: url(../images/wedding-2.jpg);
+  background-image: url(../images/room/standard/standardhead.jpg);
 }
 
 #standard i {
@@ -1236,7 +1251,7 @@ span.round-tab:hover {
   border:0;
   padding:20px;
   display:block;
-  font-size: 20px;
+  font-size: 15px;
   font-style: bold;
   text-align: middle;
   background-color: #304b78;
@@ -1374,7 +1389,7 @@ span.round-tab:hover {
 ********Twitter CSS*******
 **************************/
 #twitter {
-  background-image: url(../images/meeting-room2.jpg);
+  background-image: url(../images/meeting-room3.jpg);
 }
 
 #twitter > div {
