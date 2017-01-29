@@ -20,6 +20,10 @@ Route::get('index', function (){
 	return view('template/index');
 });
 
+Route::get('meeting-reservation', function (){
+	return view('template/meetingreservation');
+});
+
 Route::get('mail', function (){
 	//dd(Config::get('mail'));
 	Mail::send('template/mail/test',[], function ($m) {
