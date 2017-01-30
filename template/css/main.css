@@ -368,7 +368,6 @@ body,
 
 .item:nth-child(1) {
     background-image:url(../images/slider/homelobby.jpg);
-    width:auto;
     height:680px;
     background-repeat: no-repeat;
 
@@ -381,7 +380,7 @@ body,
 }
 
 .item:nth-child(3) {
-    background-image:url(../images/slider/homepage3.jpg);
+    background-image:url(../images/slider/suite1.jpg);
     background-size: 1429px 680px;
 }}
 
@@ -757,6 +756,25 @@ z-index: 1030;
   background-image:url(../images/package-back-1.jpg);
 }
 
+/*Wedding*/
+#weddinghead {
+  background-image: url(../images/wedding-2.jpg);
+}
+
+#weddinghead i {
+  font-size: 48px;
+}
+
+#weddinghead h3 {
+  margin-top: 15px;
+  font-size: 30px;
+  margin-bottom: 7px;
+  color: #fff;
+}
+
+#weddinghead .slider-overlay {
+  opacity: 0.8;
+}
 
 
 /*************************
