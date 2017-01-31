@@ -24,10 +24,19 @@ Route::get('meeting-reservation', function (){
 	return view('template/meetingreservation');
 });
 
-Route::get('mail', function (){
+Route::post('mail', function (){
 	//dd(Config::get('mail'));
-	Mail::send('template/mail/test',[], function ($m) {
+	$file = base_path('resources/views/template/meetingresvemail.blade.php');
+	$ename = $_POST['ename'];
+	file_put_contents($file, str_replace('ename', $ename, file_get_contents($file)));
+	Mail::send('template/meetingresvemail',[], function ($m) {
 		$m->to('hotelalia.test@gmail.com', 'Hotel Alia')->subject('Hotel Alia Mail Test');
 	});
 	return "MAIL SENT!";
+});
+
+Route::post('test', function (){
+	$data = $_POST;
+	$ename = $data['ename'];
+	return $ename;
 });
