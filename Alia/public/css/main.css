@@ -76,6 +76,7 @@ h3 {
 }
 
 
+
 .galbtn{
   font-size:35px;
   color:white;
@@ -98,7 +99,7 @@ h3 {
   border: 4px solid white;
   color:white;
   font-size:30px;
-  transition: 0.5s;
+  transition: 0.5s ease-out;
 }
 
 .metbtn {
@@ -244,9 +245,32 @@ section {
 
 }
 
+hr.style15 {
+  padding-top: 2px;
+  border-top: 4px double #8c8b8b;
+  text-align: center;
+  width:30%;
+}
+hr.style15:after {
+  content: '\002665';
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  padding: 0 10px;
+  background: transparent;
+  color: #8c8b8b;
+  font-size: 18px;
+}
+
+
+hr.style2 {
+  border-top: 3px double #8c8b8b;
+  width:30%;
+}
+
 hr.style17 {
   margin-top:40px;
-  border-top: 1px solid #8c8b8b;
+  border-top: 2px solid #d7c485;
   text-align: center;
   width:30%;
 }
@@ -254,10 +278,10 @@ hr.style17:after {
   content: '§';
   display: inline-block;
   position: relative;
+  color:#d7c485;
   top: -14px;
   padding: 0 10px;
   background: #fffeed;
-  color: #8c8b8b;
   font-size: 18px;
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -368,7 +392,6 @@ body,
 
 .item:nth-child(1) {
     background-image:url(../images/slider/homelobby.jpg);
-    width:auto;
     height:680px;
     background-repeat: no-repeat;
 
@@ -381,7 +404,7 @@ body,
 }
 
 .item:nth-child(3) {
-    background-image:url(../images/slider/homepage3.jpg);
+    background-image:url(../images/slider/suite1.jpg);
     background-size: 1429px 680px;
 }}
 
@@ -757,6 +780,25 @@ z-index: 1030;
   background-image:url(../images/package-back-1.jpg);
 }
 
+/*Wedding*/
+#weddinghead {
+  background-image: url(../images/wedding-2.jpg);
+}
+
+#weddinghead i {
+  font-size: 48px;
+}
+
+#weddinghead h3 {
+  margin-top: 15px;
+  font-size: 30px;
+  margin-bottom: 7px;
+  color: #fff;
+}
+
+#weddinghead .slider-overlay {
+  opacity: 0.8;
+}
 
 
 /*************************
