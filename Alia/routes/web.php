@@ -78,7 +78,7 @@ Route::post('en/room-reservation-auth', function (){
 	Mail::send('template_fix/roomresvemail',[], function ($m) {
 		$m->to('hotelalia.test@gmail.com', 'Hotel Alia')->subject('Room Reservation');
 	});
-	return view('template_fix/roomreservation');
+	return redirect('en/room-reservation');
 });
 
 Route::get('index', function (){

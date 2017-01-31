@@ -12,7 +12,7 @@
 	<b>ROOM INFORMATION</b> <br>
 	Check in Date: 01/31/2017<br>
 	Check out Date: 02/02/2017<br>
-	Number of Guests: 1<br>
+	Number of Guests: 2<br>
 	Room Selection: 1<br>
 	Number of Rooms: 1<br>
 	Payment Type: 1
