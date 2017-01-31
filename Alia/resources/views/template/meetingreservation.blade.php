@@ -75,11 +75,10 @@
   </section><!--/#features-->
 
 
-
+  <form name="meeting-form" method="post" action="test">
+  <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
   <div class="container" style="padding-bottom: 10px ;margin-top:25px; margin-bottom: 25px;">
     <div class="row">          
-      <form name="meeting-form" method="post" action="#">
-
         <!--NUMBER ONLY VALIDATION-->
         <script type="text/javascript">
             $(function(){
@@ -121,6 +120,7 @@
         </script>
         <div class="col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
            <h2 class="black">Event Information</h2>
+            <form action="meetingresvemail.php" method="post">
             <div class="form-group">
               <input type="tel" name="ename" class="form-control" placeholder="Event Name" required="required">
             </div>
@@ -128,7 +128,7 @@
               <input type="tel" name="epurpose" class="form-control" placeholder="Event Purpose" required="required">
             </div>
             <div class=" form-group select-style">
-              <select required="required" class="form-control">
+              <select required="required" class="form-control" name="room">
                 <option value="" selected disabled>Meeting Room Selection</option>
                 <option value="1">Puring</option>
                 <option value="2">Taram Besi</option>
@@ -139,17 +139,17 @@
               </select>
             </div>     
             <div class="form-group">
-              <input class="form-control number-only2" placeholder="Estimated Number of Attendees" type="number" min="0">
+              <input class="form-control number-only2" placeholder="Estimated Number of Attendees" type="number" min="0" name="attendees">
               <span id="errmsg2"></span>
             </div>
             <div class="form-group">
-              <input class="form-control number-only3" placeholder="Estimated Guests Room Count" type="number" min="0">
+              <input class="form-control number-only3" placeholder="Estimated Guests Room Count" type="number" min="0" name="roomcount">
               <span id="errmsg3"></span>  
             </div>
 
             <div class="form-group">
               <div class="input-group">
-                  <input  class="form-control" placeholder="Event Start Dates"  id="datetimegw">
+                  <input  class="form-control" placeholder="Event Start Dates"  id="datetimegw" name="startdate">
                   <span class="input-group-addon">
                       <span class="glyphicon-calendar glyphicon "></span>
                   </span>
@@ -186,7 +186,7 @@
             </div>
 
             <div class="form-group input-group">
-                <input  class="form-control" type="text" placeholder="Event End Dates"  id="datetimegw2">
+                <input  class="form-control" type="text" placeholder="Event End Dates"  id="datetimegw2" name="enddate">
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </span>
@@ -255,7 +255,7 @@
 
     </div>
   </div>
-
+  </form>
 
 
   <footer id="footer">
