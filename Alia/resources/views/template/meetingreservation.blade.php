@@ -75,7 +75,7 @@
   </section><!--/#features-->
 
 
-  <form name="meeting-form" method="post" action="test">
+  <form name="meeting-form" method="post" action="mail">
   <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
   <div class="container" style="padding-bottom: 10px ;margin-top:25px; margin-bottom: 25px;">
     <div class="row">          
@@ -120,7 +120,6 @@
         </script>
         <div class="col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
            <h2 class="black">Event Information</h2>
-            <form action="meetingresvemail.php" method="post">
             <div class="form-group">
               <input type="tel" name="ename" class="form-control" placeholder="Event Name" required="required">
             </div>

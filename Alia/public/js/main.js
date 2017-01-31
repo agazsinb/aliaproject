@@ -131,14 +131,14 @@ jQuery(function($) {
 	//DATE TIME PICKER
 
 
-
+	//-6.180911,106.837877
 	//Google Map
 	var latitude = $('#google-map').data('latitude')
 	var longitude = $('#google-map').data('longitude')
 	function initialize_map() {
 		var myLatlng = new google.maps.LatLng(latitude,longitude);
 		var mapOptions = {
-			zoom: 14,
+			zoom: 19,
 			scrollwheel: false,
 			center: myLatlng
 		};
