@@ -6,25 +6,25 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>HOTEL GRAND ALIA CIKINI</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
-  <link href="css/animate.min.css" rel="stylesheet"> 
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/lightbox.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-  <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
-  <link href="css/circle.css" rel="stylesheet">
-  <link href="css/full-slider.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/animate.min.css') }}" rel="stylesheet"> 
+  <link href="{{ URL::asset('css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/lightbox.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/main.css') }}" rel="stylesheet">
+  <link id="css-preset" href="{{ URL::asset('css/presets/preset1.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/responsive.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/circle.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/full-slider.css') }}" rel="stylesheet">
 
 
   <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
+    <script src="{{ URL::asset('js/html5shiv.js') }}"></script>
+    <script src="{{ URL::asset('js/respond.min.js') }}"></script>
   <![endif]-->
   
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="shortcut icon" href="{{ URL::asset('images/favicon.ico') }}">
 </head><!--/head-->
 
 <body>
@@ -45,21 +45,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index2.html">
-            <h1><img class="img-responsive" src="images/logo-gap2.png" alt="logo"></h1>
+          <a class="navbar-brand" href="/en">
+            <h1><img class="img-responsive" src="{{ URL::asset('images/logo-gap2.png') }}" alt="logo"></h1>
           </a>                    
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li ><a href="index2.html">Home</a></li>
-            <li ><a href="gallery.html">GALLERY</a></li> 
-            <li ><a href="suites.html" style="color:#dbb13b;">ROOMS & SUITES</a></li>                     
-            <li ><a href="meetings.html">MEETINGS</a></li>
-            <li><a href="wedding.html">WEDDINGS</a></li>
-            <li><a href="roomreservation.html">BOOK NOW</a></li>  
-            <li ><a href="feedback.html">CONTACT US</a></li>
+            <li ><a href="/en">Home</a></li>
+            <li ><a href="/en/gallery">GALLERY</a></li> 
+            <li ><a href="/en/suites" style="color:#dbb13b;">ROOMS & SUITES</a></li>                     
+            <li ><a href="/en/meetings">MEETINGS</a></li>
+            <li><a href="/en/wedding">WEDDINGS</a></li>
+            <li><a href="/en/room-reservation">BOOK NOW</a></li>  
+            <li ><a href="/en/feedback">CONTACT US</a></li>
 
-            <li><a href="roomreservation.html"><img class="img-responsive" src="images/indonesia.png" height="25" width="25" alt="logo"></a></li>     
+            <li><a href="/id/superior"><img class="img-responsive" src="{{ URL::asset('images/indonesia.png') }}" height="25" width="25" alt="logo"></a></li>     
           </ul>
         </div>
       </div>
@@ -90,13 +90,13 @@
             <!-- Carousel items -->
             <div class="carousel-inner">
                 <div class="active item">
-                    <div class="fill img-responsive" style="background-image: url(images/room/superior/superior.jpg); height:400px; width:750px;"></div>
+                    <div class="fill img-responsive" style="background-image: url({{ URL::asset('images/room/superior/superior.jpg') }}); height:400px; width:750px;"></div>
                 </div>
                 <div class="item">
-                    <div class="fill img-responsive" style="background-image: url(images/room/superior/superior2.jpg); height:400px; width:750px;"></div>
+                    <div class="fill img-responsive" style="background-image: url({{ URL::asset('images/room/superior/superior2.jpg') }}); height:400px; width:750px;"></div>
                 </div>
                 <div class="item">
-                    <div class="fill img-responsive" style="background-image: url(images/room/superior/superior3.jpg); height:400px; width:750px;"></div>
+                    <div class="fill img-responsive" style="background-image: url({{ URL::asset('images/room/superior/superior3.jpg') }}); height:400px; width:750px;"></div>
                 </div>
             </div>
             <!-- Carousel nav -->
@@ -157,7 +157,7 @@
       </div>
       <br>
       <div class="col-sm-4">
-        <center><a href="roomreservation.html" class="bookbtn">BOOK NOW</a></center>
+        <center><a href="/en/room-reservation" class="bookbtn">BOOK NOW</a></center>
       </div>
     
 
@@ -193,16 +193,16 @@
     </div>
   </footer>
 
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
-  <script type="text/javascript" src="js/wow.min.js"></script>
-  <script type="text/javascript" src="js/mousescroll.js"></script>
-  <script type="text/javascript" src="js/smoothscroll.js"></script>
-  <script type="text/javascript" src="js/jquery.countTo.js"></script>
-  <script type="text/javascript" src="js/lightbox.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.inview.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/wow.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/mousescroll.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/smoothscroll.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.countTo.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/lightbox.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
 
 </body>
 </html>

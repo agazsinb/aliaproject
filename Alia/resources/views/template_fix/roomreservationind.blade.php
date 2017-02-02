@@ -6,16 +6,16 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>HOTEL GRAND ALIA CIKINI</title>
-  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet">
 
-  <link href="css/animate.min.css" rel="stylesheet"> 
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/animate.min.css') }}" rel="stylesheet"> 
+  <link href="{{ URL::asset('css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/main.css') }}" rel="stylesheet">
 
-  <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
+  <link id="css-preset" href="{{ URL::asset('css/presets/preset1.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/responsive.css') }}" rel="stylesheet">
   <!--DATE TIME PICKER-->
-  <link href="css/datepicker.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/datepicker.css') }}" rel="stylesheet">
 
   <!-- wizard form-->
 
@@ -59,11 +59,11 @@
   </script>
 
   <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
+    <script src="{{ URL::asset('js/html5shiv.js') }}"></script>
+    <script src="{{ URL::asset('js/respond.min.js') }}"></script>
   <![endif]-->
   
-  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="shortcut icon" href="{{ URL::asset('images/favicon.ico') }}">
 </head><!--/head-->
 
 <body>
@@ -82,21 +82,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="indexind.html">
-            <h1><img class="img-responsive" src="images/logo-gap2.png" alt="logo"></h1>
+          <a class="navbar-brand" href="/id/">
+            <h1><img class="img-responsive" src="{{ URL::asset('images/logo-gap2.png') }}" alt="logo"></h1>
           </a>                    
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li ><a href="indexind.html">Beranda</a></li>
-            <li ><a href="galleryind.html">Galeri</a></li> 
-            <li ><a href="suitesind.html">Kamar & Suite</a></li>                     
-            <li ><a href="meetingsind.html">Ruang Rapat</a></li>
-            <li><a href="weddingind.html">Pernikahan</a></li>
-            <li><a href="roomreservationind.html" style="color:#dbb13b;">reservasi</a></li>  
-            <li ><a href="feedbackind.html">Saran</a></li>
+            <li ><a href="/id/">Beranda</a></li>
+            <li ><a href="/id/gallery">Galeri</a></li> 
+            <li ><a href="/id/suites">Kamar & Suite</a></li>                     
+            <li ><a href="/id/meetings">Ruang Rapat</a></li>
+            <li><a href="/id/wedding">Pernikahan</a></li>
+            <li><a href="/id/room-reservation" style="color:#dbb13b;">reservasi</a></li>  
+            <li ><a href="/id/feedback">Saran</a></li>
 
-            <li><a href="roomreservation.html"><img class="img-responsive" src="images/english.png" height="25" width="25" alt="logo"></a></li>     
+            <li><a href="/en/room-reservation"><img class="img-responsive" src="{{ URL::asset('images/english.png') }}" height="25" width="25" alt="logo"></a></li>     
           </ul>
         </div>
       </div>
@@ -154,7 +154,8 @@
           </ul>
       </div>
 
-      <form role="form" name="room-form" method="post" action="#">
+      <form role="form" name="room-form" method="post" action="room-reservation-auth">
+      <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
         <script type="text/javascript">
             $(function(){
 
@@ -278,13 +279,13 @@
 
                       <div class="form-group">
                         <div class="input-group">
-                            <input  class="form-control" placeholder="Tanggal Kedatangan"  id="datetimegw">
+                            <input  class="form-control" placeholder="Tanggal Kedatangan"  id="datetimegw" name="checkin">
                             <span class="input-group-addon">
                                 <span class="glyphicon-calendar glyphicon "></span>
                             </span>
                         </div>
-                          <script src="js/jquery.js"></script>
-                          <script src="js/bootstrap-datepicker.js"></script>
+                          <script src="{{ URL::asset('js/jquery.js') }}"></script>
+                          <script src="{{ URL::asset('js/bootstrap-datepicker.js') }}"></script>
                           <script type="text/javascript">
                               // When the document is ready
                           var nowTemp = new Date();
@@ -315,13 +316,13 @@
                       </div>
 
                       <div class="form-group input-group">
-                          <input  class="form-control" type="text" placeholder="Tanggal Kepulangan"  id="datetimegw2">
+                          <input  class="form-control" type="text" placeholder="Tanggal Kepulangan"  id="datetimegw2" name="checkout">
                           <span class="input-group-addon">
                               <span class="glyphicon glyphicon-calendar"></span>
                           </span>
                       </div>
-                          <script src="js/jquery.js"></script>
-                          <script src="js/bootstrap-datepicker.js"></script>
+                          <script src="{{ URL::asset('js/jquery.js') }}"></script>
+                          <script src="{{ URL::asset('js/bootstrap-datepicker.js') }}"></script>
                           <script type="text/javascript">
                               // When the document is ready
                           var nowTemp = new Date();
@@ -351,12 +352,12 @@
                           </script>
 
                       <div class="form-group">
-                        <input class="form-control number-only2" placeholder="Jumlah Tamu" type="number" min="0">
+                        <input class="form-control number-only2" placeholder="Jumlah Tamu" type="number" min="0" name="guests">
                         <span id="errmsg2"></span>
                       </div>
 
                       <div class=" form-group select-style">
-                        <select required="required" class="form-control">
+                        <select required="required" class="form-control" name="room">
                           <option value="" selected disabled>Tipe Kamar</option>
                           <option value="1">STANDARD</option>
                           <option value="2">SUPERIOR</option>
@@ -368,12 +369,12 @@
                       </div>
 
                       <div class="form-group">
-                        <input class="form-control number-only3" placeholder="Jumlah Kamar" type="number" min="0">
+                        <input class="form-control number-only3" placeholder="Jumlah Kamar" type="number" min="0" name="numofrooms">
                         <span id="errmsg3"></span>
                       </div>
 
                       <div class=" form-group select-style">
-                        <select required="required" class="form-control">
+                        <select required="required" class="form-control" name="payment">
                           <option value="" selected disabled>Payment type</option>
                           <option value="1">CASH</option>
                           <option value="2">BANK TRANSFER</option>
@@ -386,7 +387,7 @@
                 <center>
                   <ul class="list-inline">
                       <li><button type="button" class="prevbtn prev-step">Kembali</button></li>
-                      <li><button type="button" class="conbtn btn-info-full next-step">Lanjutkan</button></li>
+                      <li><button type="submit" class="conbtn btn-info-full next-step">Lanjutkan</button></li>
                   </ul>
                 </center>
                 </div>
@@ -437,14 +438,14 @@
   </footer>
 
 
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
-  <script type="text/javascript" src="js/wow.min.js"></script>
-  <script type="text/javascript" src="js/mousescroll.js"></script>
-  <script type="text/javascript" src="js/smoothscroll.js"></script>
-  <script type="text/javascript" src="js/jquery.countTo.js"></script>
-  <script type="text/javascript" src="js/lightbox.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.inview.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/wow.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/mousescroll.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/smoothscroll.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.countTo.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/lightbox.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
 
 </body>
 </html>

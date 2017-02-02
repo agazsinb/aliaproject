@@ -82,21 +82,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index2.html">
+          <a class="navbar-brand" href="/en">
             <h1><img class="img-responsive" src="{{ URL::asset('images/logo-gap2.png') }}" alt="logo"></h1>
           </a>                    
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li ><a href="index2.html">Home</a></li>
-            <li ><a href="gallery.html">GALLERY</a></li> 
-            <li ><a href="suites.html" >ROOMS & SUITES</a></li>                     
-            <li ><a href="meetings.html">MEETINGS</a></li>
-            <li><a href="wedding.html">WEDDINGS</a></li>
-            <li><a href="roomreservation.html" style="color:#dbb13b;">BOOK NOW</a></li>  
-            <li ><a href="feedback.html">CONTACT US</a></li>
+            <li ><a href="/en">Home</a></li>
+            <li ><a href="/en/gallery">GALLERY</a></li> 
+            <li ><a href="/en/suites" >ROOMS & SUITES</a></li>                     
+            <li ><a href="/en/meetings">MEETINGS</a></li>
+            <li><a href="/en/wedding">WEDDINGS</a></li>
+            <li><a href="/en/room-reservation" style="color:#dbb13b;">BOOK NOW</a></li>  
+            <li ><a href="/en/feedback">CONTACT US</a></li>
 
-            <li><a href="roomreservationind.html"><img class="img-responsive" src="{{ URL::asset('images/indonesia.png') }}" height="25" width="25" alt="logo"></a></li>     
+            <li><a href="/id/room-reservation"><img class="img-responsive" src="{{ URL::asset('images/indonesia.png') }}" height="25" width="25" alt="logo"></a></li>     
 
           </ul>
         </div>

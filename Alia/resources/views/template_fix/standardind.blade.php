@@ -6,25 +6,25 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>HOTEL GRAND ALIA CIKINI</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
-  <link href="css/animate.min.css" rel="stylesheet"> 
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/lightbox.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-  <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
-  <link href="css/circle.css" rel="stylesheet">
-  <link href="css/full-slider.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/animate.min.css') }}" rel="stylesheet"> 
+  <link href="{{ URL::asset('css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/lightbox.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/main.css') }}" rel="stylesheet">
+  <link id="css-preset" href="{{ URL::asset('css/presets/preset1.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/responsive.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/circle.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/full-slider.css') }}" rel="stylesheet">
 
 
   <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
+    <script src="{{ URL::asset('js/html5shiv.js') }}"></script>
+    <script src="{{ URL::asset('js/respond.min.js') }}"></script>
   <![endif]-->
   
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="shortcut icon" href="{{ URL::asset('images/favicon.ico') }}">
 </head><!--/head-->
 
 <body>
@@ -45,21 +45,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="indexind.html">
-            <h1><img class="img-responsive" src="images/logo-gap2.png" alt="logo"></h1>
+          <a class="navbar-brand" href="/id">
+            <h1><img class="img-responsive" src="{{ URL::asset('images/logo-gap2.png') }}" alt="logo"></h1>
           </a>                    
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li ><a href="indexind.html">Beranda</a></li>
-            <li ><a href="gallerind.html" >Galeri</a></li> 
-            <li ><a href="suitesind.html" style="color:#dbb13b;" >KAMAR & SUITE</a></li>                     
-            <li ><a href="meetingind.html">RUANG RAPAT</a></li>
-            <li><a href="weddingind.html">PERNIKAHAN</a></li>
-            <li><a href="roomreservationind.html">RESERVASI</a></li>
-            <li ><a href="feedbackind.html">SARAN</a></li>
-
-            <li><a href="superior.html"><img class="img-responsive" src="images/english.png" height="25" width="25" alt="logo"></a></li>    
+            <li ><a href="/id">Beranda</a></li>
+            <li ><a href="/id/gallery" >Galeri</a></li> 
+            <li ><a href="/id/suites" style="color:#dbb13b;" >KAMAR & SUITE</a></li>                     
+            <li ><a href="/id/meeting">RUANG RAPAT</a></li>
+            <li ><a href="/id/feedback">SARAN</a></li>
+            <li><a href="/id/wedding">PERNIKAHAN</a></li>
+            <li><a href="/id/room-reservation">RESERVASI</a></li>   
+            <li><a href="/en/standard"><img class="img-responsive" src="{{ URL::asset('images/english.png') }}" height="25" width="25" alt="logo"></a></li>    
           </ul>
         </div>
       </div>
@@ -67,11 +66,11 @@
   </header>
 
 
-  <section id="superior" class="parallax inner-shadow" style="margin-top: 50px;">
+  <section id="standard" class="parallax inner-shadow" style="margin-top: 50px;">
     <div class="container">
       <div class="row" >
         <div class="col-sm-12">
-        <h1> <b>S</b>UPERIOR</h1>
+        <h1> <b>S</b>TANDARD</h1>
         </div>
       </div>
     </div>
@@ -90,13 +89,10 @@
             <!-- Carousel items -->
             <div class="carousel-inner">
                 <div class="active item">
-                    <div class="fill img-responsive" style="background-image: url(images/room/superior/superior.jpg); height:400px; width:750px;"></div>
+                    <div class="fill img-responsive" style="background-image: url({{ URL::asset('images/room/standard/standard2.jpg') }}); height:400px; width:750px;"></div>
                 </div>
                 <div class="item">
-                    <div class="fill img-responsive" style="background-image: url(images/room/superior/superior2.jpg); height:400px; width:750px;"></div>
-                </div>
-                <div class="item">
-                    <div class="fill img-responsive" style="background-image: url(images/room/superior/superior3.jpg); height:400px; width:750px;"></div>
+                    <div class="fill img-responsive" style="background-image: url({{ URL::asset('images/room/standard/standard2.jpg') }}); height:400px; width:750px;"></div>
                 </div>
             </div>
             <!-- Carousel nav -->
@@ -109,11 +105,11 @@
         <figure class="thumbnail" style="margin-bottom:10px;font-size: 20px;">
 
           <figcaption class="caption">
-            <i class="fa fa-user biru desc"></i>2 Orang
+            <i class="fa fa-user biru desc"></i>4 Orang
           </figcaption>
 
           <figcaption class="caption">
-            <i class="fa fa-bed biru desc"></i>Single Bed/Double Bed
+            <i class="fa fa-bed biru desc"></i>Double Bed/Twin Bed
           </figcaption>
 
           <figcaption class="caption">
@@ -128,7 +124,7 @@
                 </h4>
                 <div id="collapseOne" class="panel-collapse collapse in">
                     <div class="panel-body">
-                        <p style="font-size:16px;">AC 1PK <i class="fa fa-circle-o biru"></i> TV 24 Inch <i class="fa fa-circle-o biru"></i> Kulkas <i class="fa fa-circle-o biru"></i> Wi-Fi Gratis<i class="fa fa-circle-o biru"></i> Coffee & Tea Maker</p>
+                        <p style="font-size:16px;">AC <i class="fa fa-circle-o biru"></i> TV 24 Inch<i class="fa fa-circle-o biru"></i> Kulkas <i class="fa fa-circle-o biru"></i> Wi-Fi Gratis <i class="fa fa-circle-o biru"></i> Coffee & Tea Maker</p>
                     </div>
                 </div>
             </div>
@@ -148,7 +144,7 @@
 
     <div class="row" style="margin-top: 10px;">
       <div class="col-sm-4">
-        <h1><b class="navy text-center">Rp. 540.000/Malam</b></h1>
+        <h1><b class="navy text-center">Rp. 500.000/Malam</b></h1>
         <b>Extra Bed - Rp. 220.000<br>
         Tambah Orang - Rp. 205.000<br></b>
         Harga sudah termasuk Tax & Service + Sarapan<br>
@@ -157,7 +153,7 @@
       </div>
       <br>
       <div class="col-sm-4">
-        <center><a href="roomreservationind.html" class="bookbtn">RESERVASI</a></center>
+        <center><a href="/id/room-reservation" class="bookbtn">RESERVASI</a></center>
       </div>
     
 
@@ -186,22 +182,22 @@
 
         <div class="row text-center">
             <p><br><br>Copyright 2017, Alia Hotels Group. All Rights Reserved<br>
-            </p>
+            Designed by Agazsi Bahasoean</p>
         </div>
 
       </div>
     </div>
   </footer>
 
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
-  <script type="text/javascript" src="js/wow.min.js"></script>
-  <script type="text/javascript" src="js/mousescroll.js"></script>
-  <script type="text/javascript" src="js/jquery.countTo.js"></script>
-  <script type="text/javascript" src="js/lightbox.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.inview.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/wow.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/mousescroll.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.countTo.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/lightbox.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
 
 </body>
 </html>

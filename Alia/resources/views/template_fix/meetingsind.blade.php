@@ -6,25 +6,25 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>HOTEL GRAND ALIA CIKINI</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
-  <link href="css/animate.min.css" rel="stylesheet"> 
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/lightbox.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-  <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
-  <link href="css/circle.css" rel="stylesheet">
-  <link href="css/full-slider.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/animate.min.css') }}" rel="stylesheet"> 
+  <link href="{{ URL::asset('css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/lightbox.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/main.css') }}" rel="stylesheet">
+  <link id="css-preset" href="{{ URL::asset('css/presets/preset1.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/responsive.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/circle.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/full-slider.css') }}" rel="stylesheet">
 
 
   <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
+    <script src="{{ URL::asset('js/html5shiv.js') }}"></script>
+    <script src="{{ URL::asset('js/respond.min.js') }}"></script>
   <![endif]-->
   
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="shortcut icon" href="{{ URL::asset('images/favicon.ico') }}">
 </head><!--/head-->
 
 <body>
@@ -45,21 +45,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="indexind.html">
-            <h1><img class="img-responsive" src="images/logo-gap2.png" alt="logo"></h1>
+          <a class="navbar-brand" href="/id/">
+            <h1><img class="img-responsive" src="{{ URL::asset('images/logo-gap2.png') }}" alt="logo"></h1>
           </a>                    
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li ><a href="indexind.html">Beranda</a></li>
-            <li ><a href="galleryind.html">Galeri</a></li> 
-            <li ><a href="suitesind.html" >Kamar & Suite</a></li>                     
-            <li ><a href="meetingsind.html" style="color:#dbb13b;">Ruang Rapat</a></li>
-            <li><a href="weddingind.html">Pernikahan</a></li>
-            <li><a href="roomreservationind.html">reservasi</a></li>  
-            <li ><a href="feedbackind.html">Saran</a></li>
+            <li ><a href="/id/">Beranda</a></li>
+            <li ><a href="/id/gallery">Galeri</a></li> 
+            <li ><a href="/id/suites" >Kamar & Suite</a></li>                     
+            <li ><a href="/id/meetings" style="color:#dbb13b;">Ruang Rapat</a></li>
+            <li><a href="/id/wedding">Pernikahan</a></li>
+            <li><a href="/id/room-reservation">reservasi</a></li>  
+            <li ><a href="/id/feedback">Saran</a></li>
 
-            <li><a href="meetings.html"><img class="img-responsive" src="images/english.png" height="25" width="25" alt="logo"></a></li>     
+            <li><a href="/en/meetings"><img class="img-responsive" src="{{ URL::asset('images/english.png') }}" height="25" width="25" alt="logo"></a></li>     
           </ul>
         </div>
       </div>
@@ -90,13 +90,13 @@
             <!-- Carousel items -->
             <div class="carousel-inner">
                 <div class="active item">
-                    <div class="fill" style="background-image: url(images/meeting/meeting1.jpg);"></div>
+                    <div class="fill" style="background-image: url({{ URL::asset('images/meeting/meeting1.jpg') }});"></div>
                 </div>
                 <div class="item">
-                    <div class="fill" style="background-image: url(images/meeting/meeting2.jpg);"></div>
+                    <div class="fill" style="background-image: url({{ URL::asset('images/meeting/meeting2.jpg') }});"></div>
                 </div>
                 <div class="item">
-                    <div class="fill" style="background-image: url(images/meeting/meeting3.jpg);"></div>
+                    <div class="fill" style="background-image: url({{ URL::asset('images/meeting/meeting3.jpg') }});"></div>
                 </div>
             </div>
             <!-- Carousel nav -->
@@ -160,7 +160,7 @@
 
     <div class="row" style="margin-top:50px;">
       <div class="col-sm-4 col-sm-offset-4">
-        <center><a href="meetingreservationind.html" class="bookbtn">RESERVASI</a></center>
+        <center><a href="/id/meeting-reservation" class="bookbtn">RESERVASI</a></center>
       </div>
     </div>
 
@@ -195,15 +195,15 @@
     </div>
   </footer>
 
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
-  <script type="text/javascript" src="js/mousescroll.js"></script>
-  <script type="text/javascript" src="js/smoothscroll.js"></script>
-  <script type="text/javascript" src="js/jquery.countTo.js"></script>
-  <script type="text/javascript" src="js/lightbox.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.inview.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/mousescroll.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/smoothscroll.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.countTo.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/lightbox.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
 
 </body>
 </html>

@@ -45,21 +45,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="indexind.html">
+          <a class="navbar-brand" href="/id">
             <h1><img class="img-responsive" src="{{ URL::asset('images/logo-gap2.png') }}" alt="logo"></h1>
           </a>                    
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li ><a href="indexind.html">Beranda</a></li>
-            <li ><a href="gallerind.html" >Galeri</a></li> 
-            <li ><a href="suitesind.html" style="color:#dbb13b;" >KAMAR & SUITE</a></li>                     
-            <li ><a href="meetingind.html">RUANG RAPAT</a></li>
-            <li><a href="weddingind.html">PERNIKAHAN</a></li>
-            <li><a href="roomreservationind.html">RESERVASI</a></li>   
-            <li ><a href="feedbackind.html">SARAN</a></li>
+            <li ><a href="/id">Beranda</a></li>
+            <li ><a href="/id/gallery" >Galeri</a></li> 
+            <li ><a href="/id/suites" style="color:#dbb13b;" >KAMAR & SUITE</a></li>                     
+            <li ><a href="/id/meetings">RUANG RAPAT</a></li>
+            <li><a href="/id/wedding">PERNIKAHAN</a></li>
+            <li><a href="/id/room-reservation">RESERVASI</a></li>   
+            <li ><a href="/id/feedback">SARAN</a></li>
 
-            <li><a href="deluxe.html"><img class="img-responsive" src="{{ URL::asset('images/english.png') }}" height="25" width="25" alt="logo"></a></li>    
+            <li><a href="/en/deluxe"><img class="img-responsive" src="{{ URL::asset('images/english.png') }}" height="25" width="25" alt="logo"></a></li>    
           </ul>
         </div>
       </div>
@@ -157,7 +157,7 @@
       </div>
       <br>
       <div class="col-sm-4">
-        <center><a href="roomreservation.html" class="bookbtn">RESERVASI</a></center>
+        <center><a href="/id/room-reservation" class="bookbtn">RESERVASI</a></center>
       </div>
     
 

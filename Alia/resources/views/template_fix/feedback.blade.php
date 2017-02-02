@@ -6,22 +6,22 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>HOTEL GRAND ALIA CIKINI</title>
-  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet">
 
-  <link href="css/animate.min.css" rel="stylesheet"> 
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/animate.min.css') }}" rel="stylesheet"> 
+  <link href="{{ URL::asset('css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/main.css') }}" rel="stylesheet">
 
-  <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
+  <link id="css-preset" href="{{ URL::asset('css/presets/preset1.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/responsive.css') }}" rel="stylesheet">
   <!--DATE TIME PICKER-->
-  <link href="css/datepicker.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/datepicker.css') }}" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
+    <script src="{{ URL::asset('js/html5shiv.js') }}"></script>
+    <script src="{{ URL::asset('js/respond.min.js') }}"></script>
   <![endif]-->
   
   <link rel="shortcut icon" href="images/favicon.ico">
@@ -43,21 +43,21 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="indexind.html">
-            <h1><img class="img-responsive" src="images/logo-gap2.png" alt="logo"></h1>
+          <a class="navbar-brand" href="/en">
+            <h1><img class="img-responsive" src="{{ URL::asset('images/logo-gap2.png') }}" alt="logo"></h1>
           </a>                    
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li ><a href="indexind.html">Beranda</a></li>
-            <li ><a href="galleryind.html">Galeri</a></li> 
-            <li ><a href="suitesind.html" >Kamar & Suite</a></li>                     
-            <li ><a href="meetingsind.html">Ruang Rapat</a></li>
-            <li><a href="weddingind.html">Pernikahan</a></li>
-            <li><a href="roomreservationind.html">reservasi</a></li>  
-            <li ><a href="feedbackind.html" style="color:#dbb13b;"">Saran</a></li>
+            <li ><a href="/en">Home</a></li>
+            <li ><a href="/en/gallery">GALLERY</a></li> 
+            <li ><a href="/en/suites" >ROOMS & SUITES</a></li>                     
+            <li ><a href="/en/meetings" >MEETINGS</a></li>
+            <li ><a href="/en/wedding">WEDDINGS</a></li>
+            <li><a href="/en/room-reservation">BOOK NOW</a></li>  
+            <li><a href="/en/feedback" style="color:#dbb13b;">CONTACT US</a></li>
 
-            <li><a href="feedback.html"><img class="img-responsive" src="images/english.png" height="25" width="25" alt="logo"></a></li>     
+            <li><a href="/id/feedback"><img class="img-responsive" src="{{ URL::asset('images/indonesia.png') }}" height="25" width="25" alt="logo"></a></li>     
           </ul>
         </div>
       </div>
@@ -69,7 +69,7 @@
     <div class="container">
       <div class="row" >
         <div class="col-sm-12">
-        <h1> <b>S</b>ARAN</h1>
+        <h1> <b>F</b>EEDBACK</h1>
         </div>
       </div>
     </div>
@@ -81,16 +81,17 @@
   <div class="container" style="padding-bottom: 10px ;margin-top:25px; margin-bottom: 25px;">
     <div class="row">
       <div class="col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-        <form id="main-contact-form" name="contact-form" method="post" action="#">
+        <form id="main-contact-form" name="contact-form" method="post" action="feedback-auth">
+        <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
           <div class="row">
             <div class="col-sm-6">
               <div class="form-group">
-                <input type="text" name="fname" class="form-control" placeholder="Nama Depan" required="required">
+                <input type="text" name="fname" class="form-control" placeholder="First Name" required="required">
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
-                <input type="text" name="lname" class="form-control" placeholder="Nama Belakang" required="required">
+                <input type="text" name="lname" class="form-control" placeholder="Last Name" required="required">
               </div>
             </div>
           </div>
@@ -98,16 +99,16 @@
             <input type="email" name="fdemail" class="form-control" placeholder="Email" required="required">
           </div>
           <div class="form-group">
-            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Tuliskan saran anda" required="required"></textarea>
+            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
           </div>                        
           <div class="form-group">
-            <button type="submit" class="bookbtn">Send</button>
+            <button type="submit" class="bookbtn" formaction="/feedback-auth">Send</button>
           </div>
         </form>   
       </div>
       <div class="col-sm-6">
         <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-          <p style="font-size: 18px;">Rate kami di traveloka, mohon click <a href="https://www.traveloka.com/hotel/indonesia/hotel-gren-alia-prapatan-3000010007125?spec=28-1-2017.30-1-2017.2.1.HOTEL.3000010007125.Hotel%20Gren%20Alia%20Prapatan,%20Jakarta%20Pusat,%20Jakarta,%20Indonesia.1">disini</a>.</p>
+          <p style="font-size: 18px;">Rate us on traveloka, please click <a href="https://www.traveloka.com/hotel/indonesia/hotel-gren-alia-prapatan-3000010007125?spec=28-1-2017.30-1-2017.2.1.HOTEL.3000010007125.Hotel%20Gren%20Alia%20Prapatan,%20Jakarta%20Pusat,%20Jakarta,%20Indonesia.1">here</a>.</p>
 
         </div>                            
       </div>
@@ -144,13 +145,13 @@
   </footer>
 
 
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
-  <script type="text/javascript" src="js/wow.min.js"></script>
-  <script type="text/javascript" src="js/mousescroll.js"></script>
-  <script type="text/javascript" src="js/jquery.countTo.js"></script>
-  <script type="text/javascript" src="js/lightbox.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.inview.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/wow.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/mousescroll.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.countTo.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/lightbox.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
 
 </body>
 </html>

@@ -6,25 +6,25 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>HOTEL GRAND ALIA CIKINI</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
 
-  <link href="css/animate.min.css" rel="stylesheet"> 
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/lightbox.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-  <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
-  <link href="css/circle.css" rel="stylesheet">
-  <link href="css/full-slider.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/animate.min.css') }}" rel="stylesheet"> 
+  <link href="{{ URL::asset('css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/lightbox.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/main.css') }}" rel="stylesheet">
+  <link id="css-preset" href="{{ URL::asset('css/presets/preset1.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/responsive.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/circle.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/full-slider.css') }}" rel="stylesheet">
 
 
   <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
+    <script src="{{ URL::asset('js/html5shiv.js') }}"></script>
+    <script src="{{ URL::asset('js/respond.min.js') }}"></script>
   <![endif]-->
   
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="shortcut icon" href="{{ URL::asset('images/favicon.ico') }}">
 </head><!--/head-->
 
 <body >
@@ -45,20 +45,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index2.html">
-            <h1><img class="img-responsive" src="images/logo-gap2.png" alt="logo"></h1>
+          <a class="navbar-brand" href="/en/">
+            <h1><img class="img-responsive" src="{{ URL::asset('images/logo-gap2.png') }}" alt="logo"></h1>
           </a>                    
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li ><a href="index2.html">Home</a></li>
-            <li ><a href="gallery.html">GALLERY</a></li> 
-            <li ><a href="suites.html" style="color:#dbb13b;">ROOMS & SUITES</a></li>                 
-            <li ><a href="meetings.html">MEETINGS</a></li>
-            <li><a href="wedding.html">WEDDINGS</a></li>
-            <li><a href="roomreservation.html">BOOK NOW</a></li>  
-            <li ><a href="feedback.html">CONTACT US</a></li>
-            <li><a href="suitesind.html"><img class="img-responsive" src="images/indonesia.png" height="25" width="25" alt="logo"></a></li>
+            <li ><a href="/en/">Home</a></li>
+            <li ><a href="/en/gallery">GALLERY</a></li> 
+            <li ><a href="/en/suites" style="color:#dbb13b;">ROOMS & SUITES</a></li>                 
+            <li ><a href="/en/meetings">MEETINGS</a></li>
+            <li><a href="/en/wedding">WEDDINGS</a></li>
+            <li><a href="/en/room-reservation">BOOK NOW</a></li>  
+            <li ><a href="/en/feedback">CONTACT US</a></li>
+            <li><a href="/en/suites"><img class="img-responsive" src="{{ URL::asset('images/indonesia.png') }}" height="25" width="25" alt="logo"></a></li>
 
           </ul>
         </div>
@@ -84,11 +84,11 @@
       <div class="col-sm-4">
           <figure class="thumbnail">
             <div class="view view-first">
-              <img src="images/room/standard2.jpg"/>
+              <img src="{{ URL::asset('images/room/standard2.jpg') }}"/>
                 <div class="mask">
                     <h2>STANDARD</h2>
                     <p>TV 24 Inch - Refigrator - AC 1PK - Hotel directory - Bath towel 2 - Free Wi-fi </p>
-                    <a href="roomreservation.html" class="info">BOOK NOW</a>
+                    <a href="/en/room-reservation" class="info">BOOK NOW</a>
                 </div>
             </div>  
               <figcaption class="caption">
@@ -102,7 +102,7 @@
                 <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><b style="margin:0 20px 0 3px; font-size: 16px;">4 X 7 M²</b>
               </figcaption>
               <figcaption style="margin-top:20px;">
-                <center><a href="standard.html" class="roombtn">DETAILS</a></center>
+                <center><a href="/en/standard" class="roombtn">DETAILS</a></center>
               </figcaption>
 
           </figure>
@@ -111,11 +111,11 @@
       <div class="col-sm-4">
           <figure class="thumbnail">
             <div class="view view-first">
-              <img src="images/room/superior/superior.jpg" />
+              <img src="{{ URL::asset('images/room/superior/superior.jpg') }}" />
                 <div class="mask">
                     <h2>SUPERIOR</h2>
                     <p>TV 24 Inch - Refigrator - AC 1PK - Hotel directory - Free Wi-Fi - Bath towel 2 - Coffe Maker</p>
-                    <a href="roomreservation.html" class="info">BOOK NOW</a>
+                    <a href="/en/room-reservation" class="info">BOOK NOW</a>
                 </div>
             </div>  
               <figcaption class="caption">
@@ -129,7 +129,7 @@
                 <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><b style="margin:0 20px 0 3px; font-size: 16px;">4 X 7 M²</b>
               </figcaption>
               <figcaption style="margin-top:20px;">
-                <center><a href="superior.html" class="roombtn">DETAILS</a></center>
+                <center><a href="/en/superior" class="roombtn">DETAILS</a></center>
               </figcaption>
 
           </figure>
@@ -138,11 +138,11 @@
       <div class="col-sm-4">
           <figure class="thumbnail">
             <div class="view view-first">
-              <img src="images/room/deluxe.jpg" />
+              <img src="{{ URL::asset('images/room/deluxe.jpg') }}" />
                 <div class="mask">
                     <h2>DELUXE</h2>
                     <p>TV 32 Inch - Refigrator - AC 1PK - Hotel directory - Free Wi-Fi - Bath towel 2 - New Interior</p>
-                    <a href="roomreservation.html" class="info" style="margin-bottom: 10px;">BOOK NOW</a>
+                    <a href="/en/room-reservation" class="info" style="margin-bottom: 10px;">BOOK NOW</a>
                 </div>
             </div>  
               <figcaption class="caption">
@@ -156,7 +156,7 @@
                 <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><b style="margin:0 20px 0 3px; font-size: 16px;">4 X 7 M²</b>
               </figcaption>
               <figcaption style="margin-top:20px;">
-                <center><a href="deluxe.html" class="roombtn">DETAILS</a></center>
+                <center><a href="/en/deluxe" class="roombtn">DETAILS</a></center>
               </figcaption>
 
           </figure>
@@ -170,11 +170,11 @@
       <div class="col-sm-4">
           <figure class="thumbnail">
             <div class="view view-first">
-              <img src="images/room/suite/suite2.jpg" />
+              <img src="{{ URL::asset('images/room/suite/suite2.jpg') }}" />
                 <div class="mask">
                     <h2>SUITE</h2>
                     <p>TV 39 Inch - Refigrator - 2 AC (1PK & 2PK) - Hotel directory - Free Wi-Fi - Bath towel 2 - Balcony</p>
-                    <a href="roomreservation.html" class="info">BOOK NOW</a>
+                    <a href="/en/room-reservation" class="info">BOOK NOW</a>
                 </div>
             </div>  
               <figcaption class="caption">
@@ -188,7 +188,7 @@
                 <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><b style="margin:0 20px 0 3px; font-size: 16px;">9 X 7 M²</b>
               </figcaption>
               <figcaption style="margin-top:20px;">
-                <center><a href="suiteroom.html" class="roombtn">DETAILS</a></center>
+                <center><a href="/en/suiteroom" class="roombtn">DETAILS</a></center>
               </figcaption>
 
           </figure>
@@ -197,11 +197,11 @@
       <div class="col-sm-4">
           <figure class="thumbnail">
             <div class="view view-first">
-              <img src="images/room/family/family1.jpg" />
+              <img src="{{ URL::asset('images/room/family/family1.jpg') }}" />
                 <div class="mask">
                     <h2>FAMILY</h2>
                     <p>TV 40 Inch - Refigrator - 2 AC (1PK & 2PK) - Hotel directory - Free Wi-Fi - Bath towel 4 - Balcony</p>
-                    <a href="roomreservation.html" class="info">BOOK NOW</a>
+                    <a href="/en/room-reservation" class="info">BOOK NOW</a>
                 </div>
             </div>  
               <figcaption class="caption">
@@ -215,7 +215,7 @@
                 <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><b style="margin:0 20px 0 3px; font-size: 16px;">8.1 X 7 M²</b>
               </figcaption>
               <figcaption style="margin-top:20px;">
-                <center><a href="family.html" class="roombtn">DETAILS</a></center>
+                <center><a href="en/family" class="roombtn">DETAILS</a></center>
               </figcaption>
 
           </figure>
@@ -224,11 +224,11 @@
       <div class="col-sm-4">
           <figure class="thumbnail">
             <div class="view view-first">
-              <img src="images/room/family/family.jpg" />
+              <img src="{{ URL::asset('images/room/family/family.jpg') }}" />
                 <div class="mask">
                     <h2>EXECUTIVE FAMILY</h2>
                     <p>TV 40 Inch - Refigrator - 2 AC (1PK & 2PK) - Hotel directory - Free Wi-Fi - Bath towel 4 - Balcony - More space</p>
-                    <a href="roomreservation.html" class="info">BOOK NOW</a>
+                    <a href="en/room-reservation" class="info">BOOK NOW</a>
                 </div>
             </div>  
               <figcaption class="caption">
@@ -242,7 +242,7 @@
                 <i class="fa fa-expand biru" style="background-color:transparent; font-size:20px;"></i><b style="margin:0 20px 0 3px; font-size: 16px;">8.2 X 7 M²</b>
               </figcaption>
               <figcaption style="margin-top:20px;">
-                <center><a href="exfamily.html" class="roombtn">DETAILS</a></center>
+                <center><a href="/en/executive-family" class="roombtn">DETAILS</a></center>
               </figcaption>
 
           </figure>
@@ -281,15 +281,15 @@
     </div>
   </footer>
 
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
-  <script type="text/javascript" src="js/wow.min.js"></script>
-  <script type="text/javascript" src="js/mousescroll.js"></script>
-  <script type="text/javascript" src="js/jquery.countTo.js"></script>
-  <script type="text/javascript" src="js/lightbox.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.inview.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/wow.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/mousescroll.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.countTo.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/lightbox.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
 
 </body>
 </html>

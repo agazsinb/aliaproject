@@ -6,16 +6,16 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <title>HOTEL GRAND ALIA CIKINI</title>
-  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet">
 
-  <link href="css/animate.min.css" rel="stylesheet"> 
-  <link href="css/font-awesome.min.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/animate.min.css') }}" rel="stylesheet"> 
+  <link href="{{ URL::asset('css/font-awesome.min.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/main.css') }}" rel="stylesheet">
 
-  <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
+  <link id="css-preset" href="{{ URL::asset('css/presets/preset1.css') }}" rel="stylesheet">
+  <link href="{{ URL::asset('css/responsive.css') }}" rel="stylesheet">
   <!--DATE TIME PICKER-->
-  <link href="css/datepicker.css" rel="stylesheet">
+  <link href="{{ URL::asset('css/datepicker.css') }}" rel="stylesheet">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
@@ -24,7 +24,7 @@
     <script src="js/respond.min.js"></script>
   <![endif]-->
   
-  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="shortcut icon" href="{{ URL::asset('images/favicon.ico') }}">
 </head><!--/head-->
 
 <body>
@@ -43,21 +43,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index2.html">
-            <h1><img class="img-responsive" src="images/logo-gap2.png" alt="logo"></h1>
+          <a class="navbar-brand" href="/en">
+            <h1><img class="img-responsive" src="{{ URL::asset('images/logo-gap.png') }}" alt="logo"></h1>
           </a>                    
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">                 
-            <li ><a href="indexind.html">Beranda</a></li>
-            <li ><a href="galleryind.html">Galeri</a></li> 
-            <li ><a href="suitesind.html" >Kamar & Suite</a></li>                     
-            <li ><a href="meetingsind.html">Ruang Rapat</a></li>
-            <li><a href="weddingind.html">Pernikahan</a></li>
-            <li><a href="roomreservationind.html" style="color:#dbb13b;">reservasi</a></li>  
-            <li ><a href="feedbackind.html">Saran</a></li>
-
-            <li><a href="meetings.html"><img class="img-responsive" src="images/english.png" height="25" width="25" alt="logo"></a></li>     
+            <li ><a href="/en">Home</a></li>
+            <li ><a href="/en/gallery">GALLERY</a></li> 
+            <li ><a href="/en/suites" >ROOMS & SUITES</a></li>                     
+            <li ><a href="/en/meetings" style="color:#00aeff;">MEETINGS</a></li>
+            <li ><a href="/en/wedding">WEDDINGS</a></li>
+            <li><a href="/en/room-reservation">BOOK NOW</a></li>
+            <li><a href="/en/feedback">CONTACT US</a></li>       
           </ul>
         </div>
       </div>
@@ -69,7 +67,7 @@
     <div class="container">
       <div class="row" >
         <div class="col-sm-12">
-        <h1> <b>R</b>ESERVASI RUANG RAPAT</h1>
+        <h1> <b>M</b>EETING RESERVATION</h1>
         </div>
       </div>
     </div>
@@ -77,10 +75,10 @@
   </section><!--/#features-->
 
 
-
+  <form name="meeting-form" method="post" action="meeting-reservation-auth">
+  <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
   <div class="container" style="padding-bottom: 10px ;margin-top:25px; margin-bottom: 25px;">
     <div class="row">          
-      <form name="meeting-form" method="post" action="#">
         <!--NUMBER ONLY VALIDATION-->
         <script type="text/javascript">
             $(function(){
@@ -121,16 +119,16 @@
             });
         </script>
         <div class="col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-           <h2 class="black">Informasi Acara</h2>
+           <h2 class="black">Event Information</h2>
             <div class="form-group">
-              <input type="text" name="ename" class="form-control" placeholder="Nama acara" required="required">
+              <input type="tel" name="ename" class="form-control" placeholder="Event Name" required="required">
             </div>
             <div class="form-group">
-              <input type="text" name="epurpose" class="form-control" placeholder="Tujuan acara" required="required">
+              <input type="tel" name="epurpose" class="form-control" placeholder="Event Purpose" required="required">
             </div>
             <div class=" form-group select-style">
-              <select required="required" class="form-control">
-                <option value="" selected disabled>Pilih Ruang Rapat</option>
+              <select required="required" class="form-control" name="room">
+                <option value="" selected disabled>Meeting Room Selection</option>
                 <option value="1">Puring</option>
                 <option value="2">Taram Besi</option>
                 <option value="3">Sepatu Dea</option>
@@ -140,23 +138,23 @@
               </select>
             </div>     
             <div class="form-group">
-              <input class="form-control number-only2" placeholder="Perkiraan jumlah kedatangan" type="number" min="0">
+              <input class="form-control number-only2" placeholder="Estimated Number of Attendees" type="number" min="0" name="attendees">
               <span id="errmsg2"></span>
             </div>
             <div class="form-group">
-              <input class="form-control number-only3" placeholder="Perkiraan jumlah kamar tamu" type="number" min="0">
+              <input class="form-control number-only3" placeholder="Estimated Guests Room Count" type="number" min="0" name="roomcount">
               <span id="errmsg3"></span>  
             </div>
 
             <div class="form-group">
               <div class="input-group">
-                  <input  class="form-control" placeholder="Tanggal mulai acara"  id="datetimegw">
+                  <input  class="form-control" placeholder="Event Start Dates"  id="datetimegw" name="startdate">
                   <span class="input-group-addon">
                       <span class="glyphicon-calendar glyphicon "></span>
                   </span>
               </div>
-                <script src="js/jquery.js"></script>
-                <script src="js/bootstrap-datepicker.js"></script>
+                <script src="{{ URL::asset('js/jquery.js') }}"></script>
+                <script src="{{ URL::asset('js/bootstrap-datepicker.js') }}"></script>
                 <script type="text/javascript">
                     // When the document is ready
                 var nowTemp = new Date();
@@ -187,13 +185,13 @@
             </div>
 
             <div class="form-group input-group">
-                <input  class="form-control" type="text" placeholder="Tanggal acara selesai"  id="datetimegw2">
+                <input  class="form-control" type="text" placeholder="Event End Dates"  id="datetimegw2" name="enddate">
                 <span class="input-group-addon">
                     <span class="glyphicon glyphicon-calendar"></span>
                 </span>
             </div>
-                <script src="js/jquery.js"></script>
-                <script src="js/bootstrap-datepicker.js"></script>
+                <script src="{{ URL::asset('js/jquery.js') }}"></script>
+                <script src="{{ URL::asset('js/bootstrap-datepicker.js') }}"></script>
                 <script type="text/javascript">
                     // When the document is ready
                 var nowTemp = new Date();
@@ -223,27 +221,27 @@
                 </script>
         </div>    
         <div class="col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">              
-          <h2 class="black">Informasi Kontak</h2>
+          <h2 class="black">Contact Information</h2>
             <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
-                  <input type="text" name="fname" class="form-control" placeholder="Nama Depan" required="required">
+                  <input type="text" name="fname" class="form-control" placeholder="First Name" required="required">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form-group">
-                  <input type="text" name="lname" class="form-control" placeholder="Nama Belakang" required="required">
+                  <input type="text" name="lname" class="form-control" placeholder="Last Name" required="required">
                 </div>
               </div>
             </div>
             <div class="form-group">
-              <input type="tel" name="pnumb" class="form-control number-only" placeholder="No HP" required="required"><span id="errmsg"></span>
+              <input type="tel" name="pnumb" class="form-control number-only" placeholder="Phone Number" required="required"><span id="errmsg"></span>
             </div>
             <div class="form-group">
-              <input type="email" name="meetingemail" class="form-control" placeholder="Email" required="required">
+              <input type="tel" name="meetingemail" class="form-control" placeholder="Email Address" required="required">
             </div>
             <div class="form-group">
-              <input type="text" name="company" class="form-control" placeholder="Perusahaan/Asosiasi" required="required">
+              <input type="tel" name="company" class="form-control" placeholder="Company/Assocation" required="required">
             </div>               
         </div>  
       </form>    
@@ -251,53 +249,38 @@
 
     <div class="row">
       <div class="col-sm-4 col-sm-offset-4">
-        <button type="submit" class="bookbtn2">Kirim Reservasi</button>
+        <button type="submit" class="bookbtn2">Send Reservation</button>
       </div>
 
     </div>
-
   </div>
-
-
-
+  </form>
 
 
   <footer id="footer">
     <div class="footer-bottom">
-      <div class="container putih" >
+      <div class="container">
         <div class="row">
-          <div class="col-sm-6 col-sm-offset-3">
-            <div class="social-icons">
-              <ul>
-                <li><a class="envelope" href="#"><i class=" fa fa-envelope"></i></a></li>
-                <li><a class="twitter" href="#"><i class=" fa fa-twitter"></i></a></li> 
-                <li><a class="dribbble" href="#"><i class=" fa fa-dribbble"></i></a></li>
-                <li><a class="facebook" href="#"><i class=" fa fa-facebook"></i></a></li>
-                <li><a class="linkedin" href="#"><i class=" fa fa-linkedin"></i></a></li>
-                <li><a class="tumblr" href="#"><i class=" fa fa-tumblr-square"></i></a></li>
-              </ul>
-            </div>
+          <div class="col-sm-6">
+            <p><u>English</u> | Bahasa</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="pull-right">Designed by <a href="http://www.themeum.com/">Alia Hotel Group</a></p>
           </div>
         </div>
-
-        <div class="row text-center">
-            <p><br><br>Copyright 2017, Alia Hotels Group. All Rights Reserved<br>
-            </p>
-        </div>
-
       </div>
     </div>
   </footer>
 
 
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
-  <script type="text/javascript" src="js/wow.min.js"></script>
-  <script type="text/javascript" src="js/mousescroll.js"></script>
-  <script type="text/javascript" src="js/smoothscroll.js"></script>
-  <script type="text/javascript" src="js/jquery.countTo.js"></script>
-  <script type="text/javascript" src="js/lightbox.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.inview.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/wow.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/mousescroll.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/smoothscroll.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/jquery.countTo.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/lightbox.min.js') }}"></script>
+  <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
 
 </body>
 </html>
