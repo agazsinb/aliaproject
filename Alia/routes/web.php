@@ -94,6 +94,11 @@ Route::post('en/room-reservation-auth', function (){
 	Mail::send('template_fix/roomresvemail',[], function ($m) {
 		$m->to('hotelalia.test@gmail.com', 'Hotel Alia')->subject('Room Reservation');
 	});
+
+	Mail::send('template_fix/roomresvemail',[], function ($m) {
+		$m->to($_POST['cusemail'], 'Hotel Alia')->subject('Room Reservation');
+	});
+
 	return redirect('en/room-reservation');
 });
 
@@ -143,6 +148,11 @@ Route::post('id/room-reservation-auth', function (){
 	Mail::send('template_fix/roomresvemail',[], function ($m) {
 		$m->to('hotelalia.test@gmail.com', 'Hotel Alia')->subject('Room Reservation');
 	});
+
+	Mail::send('template_fix/roomresvemail',[], function ($m) {
+		$m->to($_POST['cusemail'], 'Hotel Alia')->subject('Room Reservation');
+	});
+
 	return redirect('id/room-reservation');
 });
 
@@ -175,6 +185,7 @@ Route::post('en/feedback-auth', function (){
 	Mail::send('template_fix/feedbackemail',[], function ($m) {
 		$m->to('hotelalia.test@gmail.com', 'Hotel Alia')->subject('Feedback');
 	});
+
 	return redirect('en/feedback');
 });
 
@@ -207,6 +218,7 @@ Route::post('id/feedback-auth', function (){
 	Mail::send('template_fix/feedbackemail',[], function ($m) {
 		$m->to('hotelalia.test@gmail.com', 'Hotel Alia')->subject('Feedback');
 	});
+
 	return redirect('id/feedback');
 });
 
@@ -276,8 +288,13 @@ Route::post('en/meeting-reservation-auth', function (){
 
 	file_put_contents($file, $content);
 	Mail::send('template_fix/meetingresvemail',[], function ($m) {
-		$m->to('hotelalia.test@gmail.com', 'Hotel Alia')->subject('Hotel Alia Mail Test');
+		$m->to('hotelalia.test@gmail.com', 'Hotel Alia')->subject('Meeting Reservation');
 	});
+
+	Mail::send('template_fix/meetingresvemail',[], function ($m) {
+		$m->to($_POST['meetingemail'], 'Hotel Alia')->subject('Meeting Reservation');
+	});
+
 	return redirect('en/meeting-reservation');
 });
 
@@ -327,8 +344,13 @@ Route::post('id/meeting-reservation-auth', function (){
 
 	file_put_contents($file, $content);
 	Mail::send('template_fix/meetingresvemail',[], function ($m) {
-		$m->to('hotelalia.test@gmail.com', 'Hotel Alia')->subject('Hotel Alia Mail Test');
+		$m->to('hotelalia.test@gmail.com', 'Hotel Alia')->subject('Meeting Reservation');
 	});
+
+	Mail::send('template_fix/meetingresvemail',[], function ($m) {
+		$m->to($_POST['meetingemail'], 'Hotel Alia')->subject('Meeting Reservation');
+	});
+
 	return redirect('id/meeting-reservation');
 });
 
