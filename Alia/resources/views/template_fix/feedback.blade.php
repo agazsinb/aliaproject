@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>HOTEL GRAND ALIA CIKINI</title>
+  <title>HOTEL GRAND ALIA PRAPATAN</title>
   <link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet">
 
   <link href="{{ URL::asset('css/animate.min.css') }}" rel="stylesheet"> 
@@ -20,11 +20,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   <!--[if lt IE 9]>
-    <script src="{{ URL::asset('js/html5shiv.js') }}"></script>
-    <script src="{{ URL::asset('js/respond.min.js') }}"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
   <![endif]-->
   
-  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="shortcut icon" href="{{ URL::asset('images/favicon.ico') }}">
 </head><!--/head-->
 
 <body>
@@ -57,7 +57,7 @@
             <li><a href="/en/room-reservation">BOOK NOW</a></li>  
             <li><a href="/en/feedback" style="color:#dbb13b;">CONTACT US</a></li>
 
-            <li><a href="/id/feedback"><img class="img-responsive" src="{{ URL::asset('images/indonesia.png') }}" height="25" width="25" alt="logo"></a></li>     
+            <li><a href="feedbackind.html"><img class="img-responsive" src="{{ URL::asset('images/indonesia.png') }}" height="25" width="25" alt="logo"></a></li>     
           </ul>
         </div>
       </div>
@@ -81,29 +81,29 @@
   <div class="container" style="padding-bottom: 10px ;margin-top:25px; margin-bottom: 25px;">
     <div class="row">
       <div class="col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-        <form id="main-contact-form" name="contact-form" method="post" action="feedback-auth">
+        <form id="feedbackemail" name="contact-form" method="post" action="feedback-auth">
         <input type="hidden" name="_token" value="{{{ csrf_token() }}}"/>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="form-group">
-                <input type="text" name="fname" class="form-control" placeholder="First Name" required="required">
+           <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" name="fname" class="form-control" placeholder="First Name" required="required">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" name="lname" class="form-control" placeholder="Last Name" required="required">
+                </div>
               </div>
             </div>
-            <div class="col-sm-6">
-              <div class="form-group">
-                <input type="text" name="lname" class="form-control" placeholder="Last Name" required="required">
-              </div>
+            <div class="form-group">
+              <input type="email" name="meetingemail" class="form-control" placeholder="Email Address" required="required">
             </div>
-          </div>
-          <div class="form-group">
-            <input type="email" name="fdemail" class="form-control" placeholder="Email" required="required">
-          </div>
-          <div class="form-group">
-            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
-          </div>                        
-          <div class="form-group">
-            <button type="submit" class="bookbtn" formaction="/feedback-auth">Send</button>
-          </div>
+            <div class="form-group">
+              <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
+            </div>       
+            
+            <button type="submit" class="bookbtn2">Send Reservation</button>
+     
         </form>   
       </div>
       <div class="col-sm-6">
@@ -145,13 +145,13 @@
   </footer>
 
 
-  <script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
-  <script type="text/javascript" src="{{ URL::asset('js/jquery.inview.min.js') }}"></script>
-  <script type="text/javascript" src="{{ URL::asset('js/wow.min.js') }}"></script>
-  <script type="text/javascript" src="{{ URL::asset('js/mousescroll.js') }}"></script>
-  <script type="text/javascript" src="{{ URL::asset('js/jquery.countTo.js') }}"></script>
-  <script type="text/javascript" src="{{ URL::asset('js/lightbox.min.js') }}"></script>
-  <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/mousescroll.js"></script>
+  <script type="text/javascript" src="js/jquery.countTo.js"></script>
+  <script type="text/javascript" src="js/lightbox.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 </html>

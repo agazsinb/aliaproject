@@ -92,7 +92,7 @@ Route::post('en/room-reservation-auth', function (){
 
 	file_put_contents($file, $content);
 	Mail::send('template_fix/roomresvemail',[], function ($m) {
-		$m->to('hotelalia.test@gmail.com', 'Hotel Alia')->subject('Room Reservation');
+		$m->to('reservasi@grenaliaprapatanhotel.com', 'Hotel Alia')->subject('Room Reservation');
 	});
 
 	Mail::send('template_fix/roomresvemail',[], function ($m) {
@@ -146,7 +146,7 @@ Route::post('id/room-reservation-auth', function (){
 
 	file_put_contents($file, $content);
 	Mail::send('template_fix/roomresvemail',[], function ($m) {
-		$m->to('hotelalia.test@gmail.com', 'Hotel Alia')->subject('Room Reservation');
+		$m->to('reservasi@grenaliaprapatanhotel.com', 'Hotel Alia')->subject('Room Reservation');
 	});
 
 	Mail::send('template_fix/roomresvemail',[], function ($m) {
@@ -165,7 +165,7 @@ Route::post('en/feedback-auth', function (){
 
 	$fname = $_POST['fname'];
 	$lname = $_POST['lname'];
-	$fdemail = $_POST['fdemail'];
+	$meetingemail = $_POST['meetingemail'];
 	$message = $_POST['message'];
 
 	$content = '
@@ -174,7 +174,7 @@ Route::post('en/feedback-auth', function (){
 
 	First Name: '. $fname. '<br>
 	Last Name: '. $lname. '<br>
-	Email Address: '. $fdemail. '<br>
+	Email Address: '. $meetingemail. '<br>
 	Message: '. $message. '<br>
 
 	</body>
@@ -183,7 +183,7 @@ Route::post('en/feedback-auth', function (){
 
 	file_put_contents($file, $content);
 	Mail::send('template_fix/feedbackemail',[], function ($m) {
-		$m->to('hotelalia.test@gmail.com', 'Hotel Alia')->subject('Feedback');
+		$m->to('management@grenaliaprapatanhotel.com', 'Hotel Alia')->subject('Feedback');
 	});
 
 	return redirect('en/feedback');
@@ -198,7 +198,7 @@ Route::post('id/feedback-auth', function (){
 
 	$fname = $_POST['fname'];
 	$lname = $_POST['lname'];
-	$fdemail = $_POST['fdemail'];
+	$meetingemail = $_POST['meetingemail'];
 	$message = $_POST['message'];
 
 	$content = '
@@ -207,7 +207,7 @@ Route::post('id/feedback-auth', function (){
 
 	First Name: '. $fname. '<br>
 	Last Name: '. $lname. '<br>
-	Email Address: '. $fdemail. '<br>
+	Email Address: '. $meetingemail. '<br>
 	Message: '. $message. '<br>
 
 	</body>
@@ -216,7 +216,7 @@ Route::post('id/feedback-auth', function (){
 
 	file_put_contents($file, $content);
 	Mail::send('template_fix/feedbackemail',[], function ($m) {
-		$m->to('hotelalia.test@gmail.com', 'Hotel Alia')->subject('Feedback');
+		$m->to('management@grenaliaprapatanhotel.com', 'Hotel Alia')->subject('Feedback');
 	});
 
 	return redirect('id/feedback');
@@ -288,7 +288,7 @@ Route::post('en/meeting-reservation-auth', function (){
 
 	file_put_contents($file, $content);
 	Mail::send('template_fix/meetingresvemail',[], function ($m) {
-		$m->to('hotelalia.test@gmail.com', 'Hotel Alia')->subject('Meeting Reservation');
+		$m->to('reservasi@grenaliaprapatanhotel.com', 'Hotel Alia')->subject('Meeting Reservation');
 	});
 
 	Mail::send('template_fix/meetingresvemail',[], function ($m) {
@@ -344,7 +344,7 @@ Route::post('id/meeting-reservation-auth', function (){
 
 	file_put_contents($file, $content);
 	Mail::send('template_fix/meetingresvemail',[], function ($m) {
-		$m->to('hotelalia.test@gmail.com', 'Hotel Alia')->subject('Meeting Reservation');
+		$m->to('reservasi@grenaliaprapatanhotel.com', 'Hotel Alia')->subject('Meeting Reservation');
 	});
 
 	Mail::send('template_fix/meetingresvemail',[], function ($m) {
@@ -392,10 +392,4 @@ Route::get('en/wedding', function (){
 
 Route::get('id/wedding', function (){
 	return view('template_fix/weddingind');
-});
-
-Route::post('test', function (){
-	$data = $_POST;
-	$ename = $data['ename'];
-	return $ename;
 });
