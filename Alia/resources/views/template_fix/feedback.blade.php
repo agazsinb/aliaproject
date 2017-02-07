@@ -102,7 +102,7 @@
               <textarea name="message" id="message" class="form-control" rows="4" placeholder="Enter your message" required="required"></textarea>
             </div>       
             
-            <button type="submit" class="bookbtn2">Send Reservation</button>
+            <button type="submit" class="bookbtn2">Send</button>
      
         </form>   
       </div>
